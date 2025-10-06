@@ -883,7 +883,7 @@ const Index = () => {
       <section id="gallery" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Галерея</h2>
-          <p className="text-center text-muted-foreground mb-12">Моменты из жизни нашей группы</p>
+          <p className="text-center text-muted-foreground mb-12">Моменты из жизни нашей группы и детского сада</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {galleryImages.map((image, index) => (
               <Card key={index} className="overflow-hidden hover-scale transition-all duration-300">
