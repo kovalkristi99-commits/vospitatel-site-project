@@ -10,7 +10,6 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -181,9 +180,6 @@ const Index = () => {
               <Button variant="ghost" onClick={() => scrollToSection('parents')}>Родителям</Button>
               <Button variant="ghost" onClick={() => scrollToSection('gallery')}>Галерея</Button>
               <Button variant="ghost" onClick={() => scrollToSection('methodologies')}>Методики</Button>
-              <Link to="/methodology">
-                <Button variant="ghost">Материалы</Button>
-              </Link>
               <Button variant="ghost" onClick={() => scrollToSection('contacts')}>Контакты</Button>
             </div>
           </div>
