@@ -1071,20 +1071,12 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Картотеки прогулок, наблюдений, опытов и экспериментов</p>
-                <div className="space-y-2">
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/d/x5b1rVx3quUjdQ" target="_blank" rel="noopener noreferrer">
-                      <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
-                      Картотека 1
-                    </a>
-                  </Button>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/i/MlWLe2BvVtSvrA" target="_blank" rel="noopener noreferrer">
-                      <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
-                      Картотека 2
-                    </a>
-                  </Button>
-                </div>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="https://disk.yandex.ru/i/MlWLe2BvVtSvrA" target="_blank" rel="noopener noreferrer">
+                    <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
+                    Открыть картотеки
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 
