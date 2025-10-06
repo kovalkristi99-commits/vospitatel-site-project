@@ -98,7 +98,7 @@ const Index = () => {
       title: 'Сертификат за мастер-класс',
       year: '2025',
       description: 'Использование дидактических игр со стаканчиками по формированию нравственно-патриотических чувств',
-      image: 'https://cdn.poehali.dev/files/064f42a0-0ff9-4e13-bffa-b8e6d27afe3f.jpg'
+      image: 'https://cdn.poehali.dev/files/787e6e5d-caf3-4df2-8e80-545c769c871b.jpg'
     },
     {
       title: 'Благодарность за мастер-класс',
