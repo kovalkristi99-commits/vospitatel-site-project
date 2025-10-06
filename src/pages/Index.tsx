@@ -767,7 +767,7 @@ const Index = () => {
           <Tabs defaultValue="tips" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8">
               <TabsTrigger value="tips">Советы</TabsTrigger>
-              <TabsTrigger value="schedule">Режим дня</TabsTrigger>
+              <TabsTrigger value="schedule">Занятия в группе</TabsTrigger>
               <TabsTrigger value="info">Полезная информация</TabsTrigger>
             </TabsList>
             <TabsContent value="tips" className="space-y-4">
