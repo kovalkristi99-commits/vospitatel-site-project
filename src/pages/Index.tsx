@@ -220,7 +220,7 @@ const Index = () => {
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
-                  <p className="text-muted-foreground">Первая квалификационная категория</p>
+                  <p className="text-muted-foreground">Высшая квалификационная категория</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
