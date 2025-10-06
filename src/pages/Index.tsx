@@ -156,10 +156,31 @@ const Index = () => {
   ];
 
   const galleryImages = [
-    { title: 'Достижения воспитанников', description: '' },
-    { title: 'Музыкальный праздник', description: 'Новогодний утренник' },
-    { title: 'Спортивные игры', description: 'День здоровья' },
-    { title: 'Театральная постановка', description: 'Выступление детей' }
+    { 
+      title: 'Новогодний переполох', 
+      description: 'Диплом Гран-При',
+      image: 'https://cdn.poehali.dev/files/4d9f14ed-69f7-4051-a54a-fe665a345ae8.jpg'
+    },
+    { 
+      title: 'Наши дети', 
+      description: 'Зимние праздники',
+      image: 'https://cdn.poehali.dev/files/4bd3e976-263e-499f-8205-a2471899e3a6.jpg'
+    },
+    { 
+      title: 'Команда Динамит', 
+      description: 'Спортивные достижения',
+      image: 'https://cdn.poehali.dev/files/95a1eceb-4975-4b05-b1b8-351bdcd34e76.jpg'
+    },
+    { 
+      title: 'Мир вокруг нас', 
+      description: 'Исследовательский проект',
+      image: 'https://cdn.poehali.dev/files/ce191166-7189-4864-8f45-ca39f794f578.jpg'
+    },
+    { 
+      title: 'Праздничные моменты', 
+      description: 'Участие в фестивалях',
+      image: 'https://cdn.poehali.dev/files/9c67bd64-b7a9-4980-8c30-720ef77ad01a.jpg'
+    }
   ];
 
   const lessonPlans = [
@@ -884,17 +905,32 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Галерея</h2>
           <p className="text-center text-muted-foreground mb-12">Моменты из жизни нашей группы и детского сада</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {galleryImages.map((image, index) => (
-              <Card key={index} className="overflow-hidden hover-scale transition-all duration-300">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 flex items-center justify-center">
-                  <Icon name="Image" size={64} className="text-primary/40" />
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-lg">{image.title}</CardTitle>
-                  <CardDescription>{image.description}</CardDescription>
-                </CardHeader>
-              </Card>
+              <Dialog key={index}>
+                <DialogTrigger asChild>
+                  <Card className="overflow-hidden hover-scale transition-all duration-300 cursor-pointer">
+                    <div className="aspect-square overflow-hidden">
+                      <img 
+                        src={image.image} 
+                        alt={image.title}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-lg">{image.title}</CardTitle>
+                      <CardDescription>{image.description}</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl">
+                  <img 
+                    src={image.image} 
+                    alt={image.title}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
         </div>
