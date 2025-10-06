@@ -791,25 +791,74 @@ const Index = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Icon name="Clock" size={24} className="text-secondary" />
-                    Распорядок дня в группе
+                    Особенности занятий в группе
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
-                    <span className="font-semibold">7:00 - 8:30</span>
-                    <span className="text-muted-foreground">Приём детей, игры</span>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">Понедельник</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Познавательное развитие (окружающий мир, конструирование)</span>
+                        <span className="text-muted-foreground">9.00-9.15</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Физическое развитие</span>
+                        <span className="text-muted-foreground">9.50-10.05</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
-                    <span className="font-semibold">8:30 - 9:00</span>
-                    <span className="text-muted-foreground">Завтрак</span>
+                  <div>
+                    <h4 className="font-semibold mb-2">Вторник</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Развитие речи</span>
+                        <span className="text-muted-foreground">9.00-9.15</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Плавание в бассейне</span>
+                        <span className="text-muted-foreground">10.30-11.30</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
-                    <span className="font-semibold">9:00 - 11:00</span>
-                    <span className="text-muted-foreground">Занятия, прогулка</span>
+                  <div>
+                    <h4 className="font-semibold mb-2">Среда</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Развитие речи</span>
+                        <span className="text-muted-foreground">9.00-9.15</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Музыкальное развитие</span>
+                        <span className="text-muted-foreground">9.25-9.40</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
-                    <span className="font-semibold">12:00 - 15:00</span>
-                    <span className="text-muted-foreground">Обед, тихий час</span>
+                  <div>
+                    <h4 className="font-semibold mb-2">Четверг</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Физическое развитие</span>
+                        <span className="text-muted-foreground">9.00-9.15</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Рисование</span>
+                        <span className="text-muted-foreground">9.30-9.45</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Пятница</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Музыкальное развитие</span>
+                        <span className="text-muted-foreground">9.00-9.15</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Аппликация, лепка</span>
+                        <span className="text-muted-foreground">10.00-10.15</span>
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
