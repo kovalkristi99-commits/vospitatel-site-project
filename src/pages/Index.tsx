@@ -116,7 +116,7 @@ const Index = () => {
       title: 'Грамота "Сказка на ёлочке"',
       year: '2021',
       description: 'За победу в конкурсе муниципального дошкольного образовательного учреждения',
-      image: 'https://cdn.poehali.dev/files/ae5b420c-61ad-44a7-8d6c-c021828b659d.jpg'
+      image: 'https://cdn.poehali.dev/files/afd730b7-75c4-420b-88ea-68e6cf490772.jpg'
     },
     {
       title: 'Победитель конкурсов методических разработок',
