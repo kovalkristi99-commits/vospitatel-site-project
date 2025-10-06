@@ -162,6 +162,53 @@ const Index = () => {
     { title: 'Театральная постановка', description: 'Выступление детей' }
   ];
 
+  const lessonPlans = [
+    {
+      title: 'Литературная викторина «Знатоки сказок»',
+      age: 'Старшая группа (5-6 лет)',
+      area: 'Речевое развитие',
+      description: 'Обобщение и систематизация знаний детей об отечественной и зарубежной литературной сказке в процессе игры-викторины',
+      icon: 'BookOpen'
+    },
+    {
+      title: 'Путешествие в страну математики',
+      age: 'Средняя группа (4-5 лет)',
+      area: 'Познавательное развитие',
+      description: 'Формирование элементарных математических представлений через игровую деятельность',
+      icon: 'Calculator'
+    },
+    {
+      title: 'Времена года',
+      age: 'Младшая группа (3-4 года)',
+      area: 'Познавательное развитие',
+      description: 'Знакомство с сезонными изменениями в природе через наблюдение и экспериментирование',
+      icon: 'Cloud'
+    },
+    {
+      title: 'Моя семья',
+      age: 'Средняя группа (4-5 лет)',
+      area: 'Социально-коммуникативное развитие',
+      description: 'Формирование представлений о семье, семейных традициях и ценностях',
+      icon: 'Users'
+    },
+    {
+      title: 'Рисуем осень',
+      age: 'Старшая группа (5-6 лет)',
+      area: 'Художественно-эстетическое развитие',
+      description: 'Развитие творческих способностей через нетрадиционные техники рисования',
+      icon: 'Palette'
+    },
+    {
+      title: 'Весёлая физкультура',
+      age: 'Подготовительная группа (6-7 лет)',
+      area: 'Физическое развитие',
+      description: 'Укрепление здоровья и развитие физических качеств через подвижные игры',
+      icon: 'Activity'
+    }
+  ];
+
+  const [showLessons, setShowLessons] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted to-background">
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
@@ -549,10 +596,45 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Подробные конспекты занятий по различным образовательным областям</p>
-                <Button variant="outline" className="w-full">
-                  <Icon name="FileText" className="mr-2 h-4 w-4" />
-                  Смотреть материалы
-                </Button>
+                <Dialog open={showLessons} onOpenChange={setShowLessons}>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" className="w-full">
+                      <Icon name="FileText" className="mr-2 h-4 w-4" />
+                      Смотреть материалы
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+                    <div className="space-y-6">
+                      <div>
+                        <h3 className="text-2xl font-bold mb-2">Конспекты занятий</h3>
+                        <p className="text-muted-foreground">Готовые методические разработки для различных возрастных групп</p>
+                      </div>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {lessonPlans.map((lesson, index) => (
+                          <Card key={index} className="border-2">
+                            <CardHeader>
+                              <div className="flex items-start gap-3">
+                                <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                                  <Icon name={lesson.icon} size={24} className="text-white" />
+                                </div>
+                                <div className="flex-1">
+                                  <CardTitle className="text-lg mb-1">{lesson.title}</CardTitle>
+                                  <div className="flex flex-wrap gap-2 mt-2">
+                                    <Badge variant="secondary" className="text-xs">{lesson.age}</Badge>
+                                    <Badge variant="outline" className="text-xs">{lesson.area}</Badge>
+                                  </div>
+                                </div>
+                              </div>
+                            </CardHeader>
+                            <CardContent>
+                              <p className="text-sm text-muted-foreground">{lesson.description}</p>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </CardContent>
             </Card>
 
