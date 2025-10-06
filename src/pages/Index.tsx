@@ -155,10 +155,7 @@ const Index = () => {
                   <Icon name="Award" size={16} className="mr-2" />
                   Высшая категория
                 </Badge>
-                <Badge variant="secondary" className="text-base py-2 px-4">
-                  <Icon name="GraduationCap" size={16} className="mr-2" />
-                  Стаж 10+ лет
-                </Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">Стаж 7+ лет</Badge>
               </div>
             </div>
             <div className="relative">
