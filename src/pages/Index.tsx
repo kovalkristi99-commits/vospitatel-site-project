@@ -199,7 +199,7 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-foreground">Высшее педагогическое образование</h4>
+                  <h4 className="font-semibold text-foreground">Средне-профессиональное образование</h4>
                   <p className="text-muted-foreground">Специальность: Дошкольная педагогика и психология</p>
                   <p className="text-sm text-muted-foreground">Год окончания: ____</p>
                 </div>
