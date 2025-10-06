@@ -1216,9 +1216,11 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Описание проектов и методические разработки</p>
-                <Button variant="outline" className="w-full">
-                  <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
-                  Посмотреть проекты
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="https://disk.yandex.ru/i/_qQnLcSqOdus-g" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
+                    Посмотреть проекты
+                  </a>
                 </Button>
               </CardContent>
             </Card>
