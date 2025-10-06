@@ -1097,6 +1097,12 @@ const Index = () => {
                       Презентация 3
                     </a>
                   </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/3T_f_jJT0mjM5g" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Monitor" className="mr-2 h-4 w-4" />
+                      Презентация 4
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
