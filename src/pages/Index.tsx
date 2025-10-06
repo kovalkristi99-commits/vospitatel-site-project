@@ -712,7 +712,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4 italic">
                   "Огромная благодарность за чуткое отношение к детям! Наш ребёнок с радостью идёт в садик и с восторгом рассказывает о занятиях."
                 </p>
-                <p className="font-semibold text-foreground">— Семья Ивановых</p>
+                <p className="font-semibold text-foreground">— Семья Лесняк</p>
               </CardContent>
             </Card>
 
