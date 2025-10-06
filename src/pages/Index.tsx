@@ -156,7 +156,7 @@ const Index = () => {
   ];
 
   const galleryImages = [
-    { title: 'Достижения воспитанников', description: 'Занятие по рисованию' },
+    { title: 'Достижения воспитанников', description: '' },
     { title: 'Музыкальный праздник', description: 'Новогодний утренник' },
     { title: 'Спортивные игры', description: 'День здоровья' },
     { title: 'Театральная постановка', description: 'Выступление детей' }
