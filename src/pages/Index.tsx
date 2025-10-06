@@ -525,7 +525,7 @@ const Index = () => {
             </div>
           </div>
           <h2 className="text-5xl font-bold mb-6 text-foreground animate-fade-in">
-            Добро пожаловать!
+            Добро пожаловать на мой сайт!
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
             Я — воспитатель с любовью к детям и призванием помогать им расти и развиваться
