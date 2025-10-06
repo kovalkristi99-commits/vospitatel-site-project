@@ -1078,9 +1078,11 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Интерактивные презентации для занятий и родительских собраний</p>
-                <Button variant="outline" className="w-full">
-                  <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                  Смотреть презентации
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="https://disk.yandex.ru/i/30pWMdlaUG2f-w" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Monitor" className="mr-2 h-4 w-4" />
+                    Смотреть презентации
+                  </a>
                 </Button>
               </CardContent>
             </Card>
