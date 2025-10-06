@@ -4,9 +4,36 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { useToast } from '@/hooks/use-toast';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: 'Сообщение отправлено!',
+      description: 'Спасибо за обращение. Я свяжусь с вами в ближайшее время.',
+    });
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -280,39 +307,112 @@ const Index = () => {
       </section>
 
       <section id="contacts" className="py-20 px-4">
-        <div className="container mx-auto max-w-3xl">
+        <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Контакты</h2>
-          <Card className="border-2">
-            <CardContent className="pt-6 space-y-6">
-              <div className="flex items-center gap-4 p-4 bg-muted rounded-lg">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Phone" size={24} className="text-white" />
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-2">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="MessageCircle" size={24} className="text-primary" />
+                  Свяжитесь со мной
+                </CardTitle>
+                <CardDescription>Буду рада ответить на ваши вопросы</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="flex items-center gap-4 p-4 bg-muted rounded-lg">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Phone" size={24} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Телефон</p>
+                    <p className="text-muted-foreground">+7 (___) ___-__-__</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold">Телефон</p>
-                  <p className="text-muted-foreground">+7 (___) ___-__-__</p>
+                <div className="flex items-center gap-4 p-4 bg-muted rounded-lg">
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="Mail" size={24} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Email</p>
+                    <p className="text-muted-foreground">educator@example.com</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-4 p-4 bg-muted rounded-lg">
-                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Mail" size={24} className="text-white" />
+                <div className="flex items-center gap-4 p-4 bg-muted rounded-lg">
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <Icon name="MapPin" size={24} className="text-white" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Адрес</p>
+                    <p className="text-muted-foreground">Детский сад №__, г. ________</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold">Email</p>
-                  <p className="text-muted-foreground">educator@example.com</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 p-4 bg-muted rounded-lg">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="MapPin" size={24} className="text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold">Адрес</p>
-                  <p className="text-muted-foreground">Детский сад №__, г. ________</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Send" size={24} className="text-secondary" />
+                  Форма обратной связи
+                </CardTitle>
+                <CardDescription>Оставьте ваше сообщение</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Ваше имя</Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      placeholder="Как вас зовут?"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="your@email.com"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Телефон</Label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="+7 (___) ___-__-__"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Сообщение</Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="Напишите ваш вопрос или пожелание..."
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
+                      rows={4}
+                    />
+                  </div>
+                  <Button type="submit" className="w-full" size="lg">
+                    Отправить сообщение
+                    <Icon name="Send" size={18} className="ml-2" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
