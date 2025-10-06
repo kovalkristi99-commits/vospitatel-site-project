@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -44,7 +45,13 @@ const Index = () => {
     }
   };
 
-  const achievements = [
+  const achievements: Array<{
+    title: string;
+    year: string;
+    description: string;
+    image?: string;
+    images?: string[];
+  }> = [
     {
       title: 'Благодарность Министерства образования Иркутской области',
       year: '2025',
@@ -60,7 +67,14 @@ const Index = () => {
     {
       title: 'Победитель конкурсов методических разработок',
       year: '',
-      description: 'Победитель областных и районных конкурсов методических разработок'
+      description: 'Победитель областных и районных конкурсов методических разработок',
+      images: [
+        'https://cdn.poehali.dev/files/13702a46-6b89-4f40-8882-e05432586d9a.jpg',
+        'https://cdn.poehali.dev/files/f1b34b63-ae24-42a4-8786-5fb2128462a3.jpg',
+        'https://cdn.poehali.dev/files/f6c3d578-e555-4cf2-9d5e-4b1a85cba0fc.jpg',
+        'https://cdn.poehali.dev/files/9fcef69e-14f0-4dc4-b6c2-460bf3067214.jpg',
+        'https://cdn.poehali.dev/files/63771b6c-5b30-4c89-ba1f-dbdc8d00aa50.jpg'
+      ]
     }
   ];
 
@@ -201,6 +215,40 @@ const Index = () => {
                             className="w-full h-auto"
                           />
                         </div>
+                      </DialogContent>
+                    </Dialog>
+                  ) : achievement.images ? (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="w-full aspect-[3/4] mb-4 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:opacity-90 transition-opacity relative">
+                          <img 
+                            src={achievement.images[0]} 
+                            alt={achievement.title}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm">
+                            +{achievement.images.length - 1}
+                          </div>
+                        </div>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl max-h-[90vh]">
+                        <Carousel className="w-full">
+                          <CarouselContent>
+                            {achievement.images.map((img: string, idx: number) => (
+                              <CarouselItem key={idx}>
+                                <div className="relative w-full overflow-auto">
+                                  <img 
+                                    src={img} 
+                                    alt={`${achievement.title} ${idx + 1}`}
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              </CarouselItem>
+                            ))}
+                          </CarouselContent>
+                          <CarouselPrevious />
+                          <CarouselNext />
+                        </Carousel>
                       </DialogContent>
                     </Dialog>
                   ) : (
