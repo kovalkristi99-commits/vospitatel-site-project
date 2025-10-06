@@ -172,7 +172,10 @@ const Index = () => {
                   <Icon name="Award" size={16} className="mr-2" />
                   Высшая категория
                 </Badge>
-                <Badge variant="secondary" className="text-base py-2 px-4">Стаж 7+ лет</Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">
+                  <Icon name="Calendar" size={16} className="mr-2" />
+                  Стаж 10+ лет
+                </Badge>
               </div>
             </div>
             <div className="relative">
@@ -184,6 +187,55 @@ const Index = () => {
                 />
               </div>
             </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-12">
+            <Card className="border-2">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="GraduationCap" size={24} className="text-primary" />
+                  Образование
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-foreground">Высшее педагогическое образование</h4>
+                  <p className="text-muted-foreground">Специальность: Дошкольная педагогика и психология</p>
+                  <p className="text-sm text-muted-foreground">Год окончания: ____</p>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-foreground">Курсы повышения квалификации</h4>
+                  <p className="text-muted-foreground">Регулярное обучение по ФГОС ДО и современным методикам</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Award" size={24} className="text-secondary" />
+                  Квалификация
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
+                  <p className="text-muted-foreground">Первая квалификационная категория</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
+                  <p className="text-muted-foreground">Владение современными образовательными технологиями</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
+                  <p className="text-muted-foreground">Опыт работы с детьми разных возрастных групп</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary mt-1" />
+                  <p className="text-muted-foreground">Участие в профессиональных конкурсах</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
