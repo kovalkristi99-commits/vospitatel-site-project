@@ -180,6 +180,31 @@ const Index = () => {
       title: 'Праздничные моменты', 
       description: 'Участие в фестивалях',
       image: 'https://cdn.poehali.dev/files/9c67bd64-b7a9-4980-8c30-720ef77ad01a.jpg'
+    },
+    { 
+      title: 'Коллективное фото', 
+      description: 'Вся группа вместе',
+      image: 'https://cdn.poehali.dev/files/02d9d8d4-8fe2-4834-a185-360480a545df.jpg'
+    },
+    { 
+      title: 'Театральная постановка', 
+      description: 'День театра',
+      image: 'https://cdn.poehali.dev/files/b13989d6-6e11-429c-ad8e-496713ad703d.jpg'
+    },
+    { 
+      title: 'Спортивные достижения', 
+      description: 'Победители соревнований',
+      image: 'https://cdn.poehali.dev/files/5439c196-5c34-427c-9bce-b4a4b77961d9.jpg'
+    },
+    { 
+      title: 'Детский спектакль', 
+      description: 'Театральное представление',
+      image: 'https://cdn.poehali.dev/files/d7be947c-aa0c-4009-a9c0-d7106284cd66.jpg'
+    },
+    { 
+      title: 'День космонавтики', 
+      description: 'Викторина и награждение',
+      image: 'https://cdn.poehali.dev/files/dc05286e-c465-416b-947e-6e6c9c5eb9a9.jpg'
     }
   ];
 
@@ -905,33 +930,32 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Галерея</h2>
           <p className="text-center text-muted-foreground mb-12">Моменты из жизни нашей группы и детского сада</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {galleryImages.map((image, index) => (
-              <Dialog key={index}>
-                <DialogTrigger asChild>
-                  <Card className="overflow-hidden hover-scale transition-all duration-300 cursor-pointer">
-                    <div className="aspect-square overflow-hidden">
-                      <img 
-                        src={image.image} 
-                        alt={image.title}
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                      />
+          <div className="max-w-4xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {galleryImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <Card className="overflow-hidden">
+                        <div className="aspect-video overflow-hidden bg-muted">
+                          <img 
+                            src={image.image} 
+                            alt={image.title}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <CardHeader className="text-center">
+                          <CardTitle className="text-xl">{image.title}</CardTitle>
+                          <CardDescription className="text-base">{image.description}</CardDescription>
+                        </CardHeader>
+                      </Card>
                     </div>
-                    <CardHeader>
-                      <CardTitle className="text-lg">{image.title}</CardTitle>
-                      <CardDescription>{image.description}</CardDescription>
-                    </CardHeader>
-                  </Card>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl">
-                  <img 
-                    src={image.image} 
-                    alt={image.title}
-                    className="w-full h-auto rounded-lg"
-                  />
-                </DialogContent>
-              </Dialog>
-            ))}
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
