@@ -868,14 +868,11 @@ const Index = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Icon name="Info" size={24} className="text-primary" />
-                    Важная информация
+                    Обучающая программа
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-muted-foreground">• Обязательно сообщайте о болезни ребёнка</p>
-                  <p className="text-muted-foreground">• Приносите сменную одежду и обувь</p>
-                  <p className="text-muted-foreground">• Участвуйте в жизни группы и детского сада</p>
-                  <p className="text-muted-foreground">• Следите за объявлениями и новостями</p>
+                <CardContent>
+                  <p className="text-muted-foreground">Образовательная программа дошкольного образования Муниципального дошкольного образовательного учреждения Детский сад комбинированного вида № 1 «Лесная полянка»</p>
                 </CardContent>
               </Card>
             </TabsContent>
