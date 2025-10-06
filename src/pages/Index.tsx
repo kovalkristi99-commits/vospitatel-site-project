@@ -118,8 +118,12 @@ const Index = () => {
       <section id="home" className="py-20 px-4">
         <div className="container mx-auto text-center">
           <div className="inline-block mb-6 animate-fade-in">
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary via-accent to-secondary rounded-full flex items-center justify-center shadow-lg">
-              <Icon name="Smile" size={64} className="text-white" />
+            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-primary/20">
+              <img 
+                src="https://cdn.poehali.dev/files/c9898b08-5d74-4e6e-b8f4-270fb1554edd.jpg" 
+                alt="Воспитатель"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <h2 className="text-5xl font-bold mb-6 text-foreground animate-fade-in">
@@ -158,8 +162,12 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 rounded-3xl flex items-center justify-center">
-                <Icon name="User" size={120} className="text-primary" />
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                <img 
+                  src="https://cdn.poehali.dev/files/c9898b08-5d74-4e6e-b8f4-270fb1554edd.jpg" 
+                  alt="Воспитатель"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
