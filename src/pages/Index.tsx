@@ -157,11 +157,6 @@ const Index = () => {
 
   const galleryImages = [
     { 
-      title: 'Новогодний переполох', 
-      description: 'Диплом Гран-При',
-      image: 'https://cdn.poehali.dev/files/4d9f14ed-69f7-4051-a54a-fe665a345ae8.jpg'
-    },
-    { 
       title: 'Наши дети', 
       description: 'Зимние праздники',
       image: 'https://cdn.poehali.dev/files/4bd3e976-263e-499f-8205-a2471899e3a6.jpg'
