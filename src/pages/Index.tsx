@@ -1208,6 +1208,12 @@ const Index = () => {
                       Материалы 3
                     </a>
                   </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/p-vt7Nj9jiSiRw" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Heart" className="mr-2 h-4 w-4" />
+                      Материалы 4
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
