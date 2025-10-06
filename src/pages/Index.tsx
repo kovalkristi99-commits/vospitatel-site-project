@@ -1071,9 +1071,11 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Картотеки прогулок, наблюдений, опытов и экспериментов</p>
-                <Button variant="outline" className="w-full">
-                  <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
-                  Открыть картотеки
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="https://disk.yandex.ru/d/x5b1rVx3quUjdQ" target="_blank" rel="noopener noreferrer">
+                    <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
+                    Открыть картотеки
+                  </a>
                 </Button>
               </CardContent>
             </Card>
