@@ -165,7 +165,7 @@ const Index = () => {
                 Моя профессия — это не просто работа, это призвание. Каждый день я с радостью встречаю своих воспитанников, помогаю им открывать мир, учиться и развиваться.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Педагогический стаж более 10 лет позволяет мне находить индивидуальный подход к каждому ребёнку, учитывая его особенности и потребности.
+                Педагогический стаж более 7 лет позволяет мне находить индивидуальный подход к каждому ребёнку, учитывая его особенности и потребности.
               </p>
               <div className="flex flex-wrap gap-2 pt-4">
                 <Badge variant="secondary" className="text-base py-2 px-4">
@@ -174,7 +174,7 @@ const Index = () => {
                 </Badge>
                 <Badge variant="secondary" className="text-base py-2 px-4">
                   <Icon name="Calendar" size={16} className="mr-2" />
-                  Стаж 10+ лет
+                  Стаж 7+ лет
                 </Badge>
               </div>
             </div>
