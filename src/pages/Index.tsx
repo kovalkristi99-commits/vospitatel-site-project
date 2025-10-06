@@ -1085,7 +1085,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center mb-4">
                   <Icon name="Palette" size={32} className="text-white" />
                 </div>
-                <CardTitle>Дидактические игры</CardTitle>
+                <CardTitle>Многофункциональные пособия</CardTitle>
                 <CardDescription>Развивающие игры и упражнения</CardDescription>
               </CardHeader>
               <CardContent>
