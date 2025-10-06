@@ -192,11 +192,6 @@ const Index = () => {
       image: 'https://cdn.poehali.dev/files/5439c196-5c34-427c-9bce-b4a4b77961d9.jpg'
     },
     { 
-      title: 'Детский спектакль', 
-      description: 'Театральное представление',
-      image: 'https://cdn.poehali.dev/files/d7be947c-aa0c-4009-a9c0-d7106284cd66.jpg'
-    },
-    { 
       title: 'День космонавтики', 
       description: 'Викторина и награждение',
       image: 'https://cdn.poehali.dev/files/dc05286e-c465-416b-947e-6e6c9c5eb9a9.jpg'
