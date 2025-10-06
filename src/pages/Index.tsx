@@ -168,7 +168,42 @@ const Index = () => {
       age: 'Старшая группа (5-6 лет)',
       area: 'Речевое развитие',
       description: 'Обобщение и систематизация знаний детей об отечественной и зарубежной литературной сказке в процессе игры-викторины',
-      icon: 'BookOpen'
+      icon: 'BookOpen',
+      fullContent: {
+        type: 'Образовательная ситуация «закрепление ранее приобретенных знаний»',
+        practice: 'Коммуникативная деятельность. Восприятие художественной литературы.',
+        context: 'Для использования при оформлении и работе в «Книжном уголке», помощь сказочному герою - вспомнить сказки.',
+        goal: 'Обобщение и систематизирование знаний детей старшей группы об отечественной и зарубежной литературной сказки в процессе игры-викторины.',
+        tasks: {
+          learning: [
+            'Закрепить знания о сказках, пополнить словарный запас',
+            'Совершенствовать умение узнавать сказки по литературным фрагментам, иллюстрациям, ключевым словам',
+            'Активизировать в речи названия сказок, имена сказочных героев',
+            'Анализировать и различать эмоциональное состояние героев и передавать его интонацией'
+          ],
+          developing: [
+            'Формировать умение согласовывать свои действия с партнерами, желание преодолевать препятствия',
+            'Оценить и понимать смысл образных выражений в загадках'
+          ],
+          educational: [
+            'Способствовать уважению к книге, желание знать и читать',
+            'Оценить умение работать в команде, поддерживать друг друга'
+          ]
+        },
+        equipment: 'Костюм Бабы Яги, волшебный ларец, жетоны, медали, сюжетные картинки («Гуси-лебеди», «Царевна-лягушка»), карточки для д/и «Живая сказка», мнемотаблицы, яблоко, зеркало, яйцо, игла, аудио проигрыватель.',
+        stages: [
+          {
+            name: 'Мотивационный',
+            activity: 'В группу к детям под музыку входит воспитатель в костюме Бабы Яги. Беседа о сказках, исправление ошибок Бабы Яги.',
+            result: 'Сформулировать «детскую» цель – Помочь Бабе яге вспомнить сказки.'
+          },
+          {
+            name: 'Организационный', 
+            activity: 'Деление на команды (Баба Яга шепчет детям слова «собака» и «кошка»), придумывание названий команд, обсуждение правил игры.',
+            result: 'Составить и обсудить правила игры, не перебивать друг друга, дослушивать до конца, следовать правилам игры.'
+          }
+        ]
+      }
     },
     {
       title: 'Путешествие в страну математики',
@@ -208,6 +243,7 @@ const Index = () => {
   ];
 
   const [showLessons, setShowLessons] = useState(false);
+  const [selectedLesson, setSelectedLesson] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted to-background">
@@ -611,7 +647,11 @@ const Index = () => {
                       </div>
                       <div className="grid md:grid-cols-2 gap-4">
                         {lessonPlans.map((lesson, index) => (
-                          <Card key={index} className="border-2">
+                          <Card 
+                            key={index} 
+                            className="border-2 cursor-pointer hover:border-primary transition-all"
+                            onClick={() => setSelectedLesson(index)}
+                          >
                             <CardHeader>
                               <div className="flex items-start gap-3">
                                 <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center flex-shrink-0">
@@ -628,11 +668,119 @@ const Index = () => {
                             </CardHeader>
                             <CardContent>
                               <p className="text-sm text-muted-foreground">{lesson.description}</p>
+                              {lesson.fullContent && (
+                                <Button variant="ghost" size="sm" className="mt-3 w-full">
+                                  <Icon name="Eye" className="mr-2 h-4 w-4" />
+                                  Открыть полный конспект
+                                </Button>
+                              )}
                             </CardContent>
                           </Card>
                         ))}
                       </div>
                     </div>
+                  </DialogContent>
+                </Dialog>
+
+                <Dialog open={selectedLesson !== null} onOpenChange={() => setSelectedLesson(null)}>
+                  <DialogContent className="max-w-5xl max-h-[85vh] overflow-y-auto">
+                    {selectedLesson !== null && lessonPlans[selectedLesson]?.fullContent && (
+                      <div className="space-y-6">
+                        <div>
+                          <h2 className="text-3xl font-bold mb-2">{lessonPlans[selectedLesson].title}</h2>
+                          <div className="flex flex-wrap gap-2 mb-4">
+                            <Badge variant="secondary">{lessonPlans[selectedLesson].age}</Badge>
+                            <Badge variant="outline">{lessonPlans[selectedLesson].area}</Badge>
+                          </div>
+                          <p className="text-muted-foreground">{lessonPlans[selectedLesson].fullContent.type}</p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <Card>
+                            <CardHeader>
+                              <CardTitle className="text-lg">Культурная практика</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                              <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.practice}</p>
+                            </CardContent>
+                          </Card>
+
+                          <Card>
+                            <CardHeader>
+                              <CardTitle className="text-lg">Культурно-смысловой контекст</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                              <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.context}</p>
+                            </CardContent>
+                          </Card>
+                        </div>
+
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Цель занятия</CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="text-muted-foreground">{lessonPlans[selectedLesson].fullContent.goal}</p>
+                          </CardContent>
+                        </Card>
+
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Задачи</CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-4">
+                            <div>
+                              <h4 className="font-semibold mb-2 text-primary">Обучающие:</h4>
+                              <ul className="list-disc list-inside space-y-1">
+                                {lessonPlans[selectedLesson].fullContent.tasks.learning.map((task, i) => (
+                                  <li key={i} className="text-sm text-muted-foreground">{task}</li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2 text-secondary">Развивающие:</h4>
+                              <ul className="list-disc list-inside space-y-1">
+                                {lessonPlans[selectedLesson].fullContent.tasks.developing.map((task, i) => (
+                                  <li key={i} className="text-sm text-muted-foreground">{task}</li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold mb-2 text-accent">Воспитательные:</h4>
+                              <ul className="list-disc list-inside space-y-1">
+                                {lessonPlans[selectedLesson].fullContent.tasks.educational.map((task, i) => (
+                                  <li key={i} className="text-sm text-muted-foreground">{task}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </CardContent>
+                        </Card>
+
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Оборудование</CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.equipment}</p>
+                          </CardContent>
+                        </Card>
+
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Ход занятия</CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-4">
+                            {lessonPlans[selectedLesson].fullContent.stages.map((stage, i) => (
+                              <div key={i} className="border-l-4 border-l-primary pl-4">
+                                <h4 className="font-semibold mb-2">{i + 1}. {stage.name} этап</h4>
+                                <p className="text-sm text-muted-foreground mb-2"><strong>Деятельность:</strong> {stage.activity}</p>
+                                <p className="text-sm text-muted-foreground"><strong>Результат:</strong> {stage.result}</p>
+                              </div>
+                            ))}
+                          </CardContent>
+                        </Card>
+                      </div>
+                    )}
                   </DialogContent>
                 </Dialog>
               </CardContent>
