@@ -47,7 +47,8 @@ const Index = () => {
     {
       title: 'Благодарность Министерства образования Иркутской области',
       year: '2025',
-      description: 'За вклад в развитие дошкольного образования'
+      description: 'За вклад в развитие дошкольного образования',
+      image: 'https://cdn.poehali.dev/files/5ab25420-41b8-48d5-858c-8d6afb143903.jpg'
     },
     {
       title: 'Воспитатель года',
@@ -177,11 +178,21 @@ const Index = () => {
           <p className="text-center text-muted-foreground mb-12">Мои награды и достижения</p>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {achievements.map((achievement, index) => (
-              <Card key={index} className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <Card key={index} className="hover-scale border-2 hover:border-primary transition-all duration-300 overflow-hidden">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <Icon name="Award" size={32} className="text-white" />
-                  </div>
+                  {achievement.image ? (
+                    <div className="w-full aspect-[3/4] mb-4 rounded-lg overflow-hidden shadow-lg">
+                      <img 
+                        src={achievement.image} 
+                        alt={achievement.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4 mx-auto">
+                      <Icon name="Award" size={32} className="text-white" />
+                    </div>
+                  )}
                   <CardTitle className="text-center">{achievement.title}</CardTitle>
                   <CardDescription className="text-center text-lg font-semibold text-primary">
                     {achievement.year}
