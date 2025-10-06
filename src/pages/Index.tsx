@@ -572,7 +572,7 @@ const Index = () => {
           <div className="inline-block mb-6 animate-fade-in">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-primary/20">
               <img 
-                src="https://cdn.poehali.dev/files/c9898b08-5d74-4e6e-b8f4-270fb1554edd.jpg" 
+                src="https://cdn.poehali.dev/files/3d40e234-6408-4b1c-97ea-39e4504d5a4c.jpg" 
                 alt="Воспитатель"
                 className="w-full h-full object-cover"
               />
