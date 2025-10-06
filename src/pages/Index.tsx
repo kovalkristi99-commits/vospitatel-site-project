@@ -1078,12 +1078,20 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Интерактивные презентации для занятий и родительских собраний</p>
-                <Button variant="outline" className="w-full" asChild>
-                  <a href="https://disk.yandex.ru/i/30pWMdlaUG2f-w" target="_blank" rel="noopener noreferrer">
-                    <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                    Смотреть презентации
-                  </a>
-                </Button>
+                <div className="space-y-2">
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/30pWMdlaUG2f-w" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Monitor" className="mr-2 h-4 w-4" />
+                      Презентация 1
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/LukvIsXJ2oGPHQ" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Monitor" className="mr-2 h-4 w-4" />
+                      Презентация 2
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
