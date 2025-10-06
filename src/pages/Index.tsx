@@ -1044,12 +1044,20 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Коллекция игр для развития внимания, памяти, мышления</p>
-                <Button variant="outline" className="w-full" asChild>
-                  <a href="https://disk.yandex.ru/i/LOZMHEzjCo31HA" target="_blank" rel="noopener noreferrer">
-                    <Icon name="Sparkles" className="mr-2 h-4 w-4" />
-                    Посмотреть игры
-                  </a>
-                </Button>
+                <div className="space-y-2">
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/LOZMHEzjCo31HA" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Sparkles" className="mr-2 h-4 w-4" />
+                      Игра 1
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/BIDWCcQ3faXT1A" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Sparkles" className="mr-2 h-4 w-4" />
+                      Игра 2
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
