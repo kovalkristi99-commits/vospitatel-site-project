@@ -182,8 +182,8 @@ const Index = () => {
       image: 'https://cdn.poehali.dev/files/9c67bd64-b7a9-4980-8c30-720ef77ad01a.jpg'
     },
     { 
-      title: 'Коллективное фото', 
-      description: 'Вся группа вместе',
+      title: 'Посвящение в волонтеры', 
+      description: 'Торжественное мероприятие',
       image: 'https://cdn.poehali.dev/files/02d9d8d4-8fe2-4834-a185-360480a545df.jpg'
     },
     { 
