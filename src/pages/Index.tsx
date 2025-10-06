@@ -322,7 +322,72 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="parents" className="py-20 px-4 bg-card">
+      <section className="py-20 px-4 bg-card">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Благодарности</h2>
+          <p className="text-center text-muted-foreground mb-12">От родителей и коллег</p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="border-2">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Огромная благодарность за чуткое отношение к детям! Наш ребёнок с радостью идёт в садик и с восторгом рассказывает о занятиях."
+                </p>
+                <p className="font-semibold text-foreground">— Семья Ивановых</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Профессионал своего дела! Умеет найти подход к каждому ребёнку, создаёт тёплую атмосферу в группе."
+                </p>
+                <p className="font-semibold text-foreground">— Родители воспитанников</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Благодарим за творческий подход к развитию детей. Видно, что работаете с душой и любовью!"
+                </p>
+                <p className="font-semibold text-foreground">— Семья Петровых</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Спасибо за терпение, доброту и профессионализм. Наши дети многому научились благодаря вам!"
+                </p>
+                <p className="font-semibold text-foreground">— Родительский комитет</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="parents" className="py-20 px-4">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Родителям</h2>
           <Tabs defaultValue="tips" className="w-full">
