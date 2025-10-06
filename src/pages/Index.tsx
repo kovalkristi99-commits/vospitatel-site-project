@@ -1271,6 +1271,12 @@ const Index = () => {
                       Проект 4
                     </a>
                   </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/jRpCc60mWXlQbw" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
+                      Проект 5
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
