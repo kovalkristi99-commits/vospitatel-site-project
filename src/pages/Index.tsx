@@ -205,6 +205,31 @@ const Index = () => {
       title: 'День космонавтики', 
       description: 'Викторина и награждение',
       image: 'https://cdn.poehali.dev/files/dc05286e-c465-416b-947e-6e6c9c5eb9a9.jpg'
+    },
+    { 
+      title: 'Театральное представление', 
+      description: 'Детский спектакль',
+      image: 'https://cdn.poehali.dev/files/e074db28-45e8-4275-956e-28d7e97266f4.jpg'
+    },
+    { 
+      title: 'Игровая деятельность', 
+      description: 'Занятия в группе',
+      image: 'https://cdn.poehali.dev/files/b9187c14-32dc-4e98-832c-941f9a40e100.jpg'
+    },
+    { 
+      title: 'Новогодний праздник', 
+      description: 'Встреча с Дедом Морозом',
+      image: 'https://cdn.poehali.dev/files/f2fc0750-0bdb-440f-8a2a-e14548439163.jpg'
+    },
+    { 
+      title: 'Зимняя прогулка', 
+      description: 'Встреча Деда Мороза на улице',
+      image: 'https://cdn.poehali.dev/files/9bdc3c48-13cb-4859-aeac-9e74a09e5d1d.jpg'
+    },
+    { 
+      title: 'Праздничное фото', 
+      description: 'С героями праздника',
+      image: 'https://cdn.poehali.dev/files/2599f9f1-0545-409f-92c5-9ee397580394.jpg'
     }
   ];
 
