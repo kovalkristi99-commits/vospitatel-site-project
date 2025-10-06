@@ -1216,12 +1216,20 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">Описание проектов и методические разработки</p>
-                <Button variant="outline" className="w-full" asChild>
-                  <a href="https://disk.yandex.ru/i/_qQnLcSqOdus-g" target="_blank" rel="noopener noreferrer">
-                    <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
-                    Посмотреть проекты
-                  </a>
-                </Button>
+                <div className="space-y-2">
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/_qQnLcSqOdus-g" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
+                      Проект 1
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/BXQumqLckZxq1Q" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
+                      Проект 2
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
