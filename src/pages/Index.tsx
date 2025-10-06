@@ -179,6 +179,7 @@ const Index = () => {
               <Button variant="ghost" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
               <Button variant="ghost" onClick={() => scrollToSection('parents')}>Родителям</Button>
               <Button variant="ghost" onClick={() => scrollToSection('gallery')}>Галерея</Button>
+              <Button variant="ghost" onClick={() => scrollToSection('methodical')}>Методическая копилка</Button>
               <Button variant="ghost" onClick={() => scrollToSection('contacts')}>Контакты</Button>
             </div>
           </div>
@@ -529,6 +530,116 @@ const Index = () => {
                 </CardHeader>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="methodical" className="py-20 px-4 bg-card">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Методическая копилка</h2>
+          <p className="text-center text-muted-foreground mb-12">Полезные материалы для работы с детьми</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="BookOpen" size={32} className="text-white" />
+                </div>
+                <CardTitle>Конспекты занятий</CardTitle>
+                <CardDescription>Готовые планы и сценарии занятий</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Подробные конспекты занятий по различным образовательным областям</p>
+                <Button variant="outline" className="w-full">
+                  <Icon name="FileText" className="mr-2 h-4 w-4" />
+                  Смотреть материалы
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Palette" size={32} className="text-white" />
+                </div>
+                <CardTitle>Дидактические игры</CardTitle>
+                <CardDescription>Развивающие игры и упражнения</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Коллекция игр для развития внимания, памяти, мышления</p>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Sparkles" className="mr-2 h-4 w-4" />
+                  Посмотреть игры
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="FileCheck" size={32} className="text-white" />
+                </div>
+                <CardTitle>Картотеки</CardTitle>
+                <CardDescription>Систематизированные материалы</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Картотеки прогулок, наблюдений, опытов и экспериментов</p>
+                <Button variant="outline" className="w-full">
+                  <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
+                  Открыть картотеки
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Presentation" size={32} className="text-white" />
+                </div>
+                <CardTitle>Презентации</CardTitle>
+                <CardDescription>Мультимедийные материалы</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Интерактивные презентации для занятий и родительских собраний</p>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Monitor" className="mr-2 h-4 w-4" />
+                  Смотреть презентации
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Users" size={32} className="text-white" />
+                </div>
+                <CardTitle>Работа с родителями</CardTitle>
+                <CardDescription>Консультации и рекомендации</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Памятки, буклеты и консультации для родителей</p>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Heart" className="mr-2 h-4 w-4" />
+                  Материалы для родителей
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Star" size={32} className="text-white" />
+                </div>
+                <CardTitle>Проектная деятельность</CardTitle>
+                <CardDescription>Долгосрочные проекты</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Описание проектов и методические разработки</p>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
+                  Посмотреть проекты
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
