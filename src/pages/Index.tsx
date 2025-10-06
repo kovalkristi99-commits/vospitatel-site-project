@@ -799,12 +799,12 @@ const Index = () => {
                     <h4 className="font-semibold mb-2">Понедельник</h4>
                     <div className="space-y-2 ml-4">
                       <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>1. Познавательное развитие (окружающий мир, конструирование)</span>
-                        <span className="text-muted-foreground">9.00-9.15</span>
+                        <span>1. Познавательное развитие (Окружающий мир, конструирование)</span>
+                        <span className="text-muted-foreground">9.00-9.20</span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>2. Физическое развитие</span>
-                        <span className="text-muted-foreground">9.50-10.05</span>
+                        <span>2. Музыкальное развитие</span>
+                        <span className="text-muted-foreground">9.35-9.55</span>
                       </div>
                     </div>
                   </div>
@@ -812,8 +812,34 @@ const Index = () => {
                     <h4 className="font-semibold mb-2">Вторник</h4>
                     <div className="space-y-2 ml-4">
                       <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>1. Развитие речи</span>
-                        <span className="text-muted-foreground">9.00-9.15</span>
+                        <span>1. Познавательное развитие (РЭМП, конструирование)</span>
+                        <span className="text-muted-foreground">9.00-9.20</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Физическое развитие</span>
+                        <span className="text-muted-foreground">9.35-9.55</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Среда</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Физическое развитие</span>
+                        <span className="text-muted-foreground">9.00-9.20</span>
+                      </div>
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>2. Развитие речи</span>
+                        <span className="text-muted-foreground">9.30-9.50</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Четверг</h4>
+                    <div className="space-y-2 ml-4">
+                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
+                        <span>1. Аппликация, лепка</span>
+                        <span className="text-muted-foreground">9.00-9.20</span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
                         <span>2. Плавание в бассейне</span>
@@ -822,41 +848,15 @@ const Index = () => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Среда</h4>
-                    <div className="space-y-2 ml-4">
-                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>1. Развитие речи</span>
-                        <span className="text-muted-foreground">9.00-9.15</span>
-                      </div>
-                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>2. Музыкальное развитие</span>
-                        <span className="text-muted-foreground">9.25-9.40</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Четверг</h4>
-                    <div className="space-y-2 ml-4">
-                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>1. Физическое развитие</span>
-                        <span className="text-muted-foreground">9.00-9.15</span>
-                      </div>
-                      <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>2. Рисование</span>
-                        <span className="text-muted-foreground">9.30-9.45</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
                     <h4 className="font-semibold mb-2">Пятница</h4>
                     <div className="space-y-2 ml-4">
                       <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>1. Музыкальное развитие</span>
-                        <span className="text-muted-foreground">9.00-9.15</span>
+                        <span>1. Рисование</span>
+                        <span className="text-muted-foreground">9.00-9.20</span>
                       </div>
                       <div className="flex justify-between items-center p-2 bg-muted rounded-lg">
-                        <span>2. Аппликация, лепка</span>
-                        <span className="text-muted-foreground">10.00-10.15</span>
+                        <span>2. Музыкальное развитие</span>
+                        <span className="text-muted-foreground">10.00-10.20</span>
                       </div>
                     </div>
                   </div>
