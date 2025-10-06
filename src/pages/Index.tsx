@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -181,13 +182,26 @@ const Index = () => {
               <Card key={index} className="hover-scale border-2 hover:border-primary transition-all duration-300 overflow-hidden">
                 <CardHeader>
                   {achievement.image ? (
-                    <div className="w-full aspect-[3/4] mb-4 rounded-lg overflow-hidden shadow-lg">
-                      <img 
-                        src={achievement.image} 
-                        alt={achievement.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="w-full aspect-[3/4] mb-4 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:opacity-90 transition-opacity">
+                          <img 
+                            src={achievement.image} 
+                            alt={achievement.title}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+                        <div className="relative w-full h-full overflow-auto">
+                          <img 
+                            src={achievement.image} 
+                            alt={achievement.title}
+                            className="w-full h-auto"
+                          />
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   ) : (
                     <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mb-4 mx-auto">
                       <Icon name="Award" size={32} className="text-white" />
