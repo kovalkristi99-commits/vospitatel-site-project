@@ -179,7 +179,6 @@ const Index = () => {
               <Button variant="ghost" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
               <Button variant="ghost" onClick={() => scrollToSection('parents')}>Родителям</Button>
               <Button variant="ghost" onClick={() => scrollToSection('gallery')}>Галерея</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('methodologies')}>Методики</Button>
               <Button variant="ghost" onClick={() => scrollToSection('contacts')}>Контакты</Button>
             </div>
           </div>
@@ -528,28 +527,6 @@ const Index = () => {
                   <CardTitle className="text-lg">{image.title}</CardTitle>
                   <CardDescription>{image.description}</CardDescription>
                 </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="methodologies" className="py-20 px-4 bg-card">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Методики работы</h2>
-          <p className="text-center text-muted-foreground mb-12">Комплексный подход к развитию ребёнка</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {methodologies.map((method, index) => (
-              <Card key={index} className="text-center hover-scale border-2 hover:border-primary transition-all duration-300">
-                <CardHeader>
-                  <div className="w-20 h-20 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <Icon name={method.icon} size={36} className="text-white" />
-                  </div>
-                  <CardTitle className="text-xl">{method.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{method.description}</p>
-                </CardContent>
               </Card>
             ))}
           </div>
