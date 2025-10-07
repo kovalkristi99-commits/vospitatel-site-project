@@ -874,10 +874,7 @@ const Index = () => {
                     <Icon name="ExternalLink" size={20} className="text-green-600" />
                     <span className="text-green-700 font-medium">Я-родитель - советы по воспитанию</span>
                   </a>
-                  <a href="https://ikp-rao.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                    <Icon name="ExternalLink" size={20} className="text-purple-600" />
-                    <span className="text-purple-700 font-medium">Институт коррекционной педагогики</span>
-                  </a>
+
                   <a href="https://deti.mail.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
                     <Icon name="ExternalLink" size={20} className="text-orange-600" />
                     <span className="text-orange-700 font-medium">Дети Mail.ru - развитие и здоровье</span>
