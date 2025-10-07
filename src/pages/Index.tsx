@@ -1034,7 +1034,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-center">Занятие 1</CardTitle>
+                <CardTitle className="text-center">Интеллектуально-познавательная игра математической направленности "Что?Где?Когда?" в старшей группе</CardTitle>
               </CardHeader>
             </Card>
             <Card className="overflow-hidden border-2">
@@ -1048,7 +1048,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-center">Занятие 2</CardTitle>
+                <CardTitle className="text-center">Спектакль "Муха Цокотуха" в старшей группе</CardTitle>
               </CardHeader>
             </Card>
             <Card className="overflow-hidden border-2">
@@ -1062,7 +1062,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-center">Занятие 3</CardTitle>
+                <CardTitle className="text-center">Один день из жизни воспитателя</CardTitle>
               </CardHeader>
             </Card>
             <Card className="overflow-hidden border-2">
@@ -1076,7 +1076,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-center">Занятие 4</CardTitle>
+                <CardTitle className="text-center">Занятие по познавательному развитию в средней группе "В поисках капелек"</CardTitle>
               </CardHeader>
             </Card>
             <Card className="overflow-hidden border-2">
@@ -1090,7 +1090,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-center">Занятие 5</CardTitle>
+                <CardTitle className="text-center">Фрагмент занятия по познавательному развитию в средней группе "Символы страны Россия"</CardTitle>
               </CardHeader>
             </Card>
             <Card className="overflow-hidden border-2">
@@ -1104,7 +1104,7 @@ const Index = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-center">Занятие 6</CardTitle>
+                <CardTitle className="text-center">Занятие по речевому развитию во второй младшей группе "Признаки весны"</CardTitle>
               </CardHeader>
             </Card>
           </div>
