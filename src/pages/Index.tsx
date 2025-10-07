@@ -1022,7 +1022,7 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Наши будни и праздники</h2>
           <p className="text-center text-muted-foreground mb-12">Видео из жизни нашей группы</p>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <Card className="overflow-hidden border-2">
               <div className="aspect-video">
                 <iframe 
@@ -1049,6 +1049,20 @@ const Index = () => {
               </div>
               <CardHeader>
                 <CardTitle className="text-center">Занятие 2</CardTitle>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden border-2">
+              <div className="aspect-video">
+                <iframe 
+                  src="https://www.youtube.com/embed/8fuONFXF3m4"
+                  title="Видео занятий 3"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">Занятие 3</CardTitle>
               </CardHeader>
             </Card>
           </div>
