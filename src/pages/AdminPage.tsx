@@ -133,18 +133,36 @@ export default function AdminPage() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div className="flex items-center gap-2 text-gray-700">
-                    <Icon name="Mail" size={16} />
-                    <a href={`mailto:${msg.email}`} className="hover:text-blue-600">
-                      {msg.email}
-                    </a>
+                  <div className="flex items-center justify-between bg-blue-50 p-3 rounded-lg">
+                    <div className="flex items-center gap-2 text-gray-700">
+                      <Icon name="Mail" size={16} />
+                      <span className="font-medium">{msg.email}</span>
+                    </div>
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText(msg.email);
+                        alert('Email скопирован!');
+                      }}
+                      className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition text-sm"
+                    >
+                      Копировать
+                    </button>
                   </div>
                   {msg.phone && (
-                    <div className="flex items-center gap-2 text-gray-700">
-                      <Icon name="Phone" size={16} />
-                      <a href={`tel:${msg.phone}`} className="hover:text-blue-600">
-                        {msg.phone}
-                      </a>
+                    <div className="flex items-center justify-between bg-green-50 p-3 rounded-lg">
+                      <div className="flex items-center gap-2 text-gray-700">
+                        <Icon name="Phone" size={16} />
+                        <span className="font-medium">{msg.phone}</span>
+                      </div>
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(msg.phone);
+                          alert('Телефон скопирован!');
+                        }}
+                        className="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 transition text-sm"
+                      >
+                        Копировать
+                      </button>
                     </div>
                   )}
                   <div className="bg-gray-50 p-4 rounded-lg">
