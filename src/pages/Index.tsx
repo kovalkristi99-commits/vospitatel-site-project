@@ -556,12 +556,12 @@ const Index = () => {
             </div>
             <div className="hidden md:flex gap-4">
               <Button variant="default" onClick={() => scrollToSection('home')}>Главная</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('about')}>Обо мне</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('parents')}>Родителям</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('gallery')}>Галерея</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('methodical')}>Методическая копилка</Button>
-              <Button variant="ghost" onClick={() => scrollToSection('contacts')}>Контакты</Button>
+              <Button variant="default" onClick={() => scrollToSection('about')}>Обо мне</Button>
+              <Button variant="default" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
+              <Button variant="default" onClick={() => scrollToSection('parents')}>Родителям</Button>
+              <Button variant="default" onClick={() => scrollToSection('gallery')}>Галерея</Button>
+              <Button variant="default" onClick={() => scrollToSection('methodical')}>Методическая копилка</Button>
+              <Button variant="default" onClick={() => scrollToSection('contacts')}>Контакты</Button>
             </div>
           </div>
         </div>
