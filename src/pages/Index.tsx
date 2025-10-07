@@ -1439,7 +1439,17 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="font-semibold">Адрес</p>
-                    <p className="text-muted-foreground">МДОУ ДСКВ № 1 "Лесная полянка", 665654 Иркутская область, Нижнеилимский район, г. Железногорск-Илимский, квартал 6, д.17</p>
+                    <p className="text-muted-foreground">
+                      <a 
+                        href="https://dou1nilimsk.gosuslugi.ru/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:text-accent transition-colors underline"
+                      >
+                        МДОУ ДСКВ № 1 "Лесная полянка"
+                      </a>
+                      , 665654 Иркутская область, Нижнеилимский район, г. Железногорск-Илимский, квартал 6, д.17
+                    </p>
                   </div>
                 </div>
               </CardContent>
