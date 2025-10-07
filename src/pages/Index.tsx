@@ -545,14 +545,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted to-background" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/58ea9d95-decc-4238-a296-7968715452c7.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
                 <Icon name="Sun" size={24} className="text-primary-foreground" />
               </div>
-              <h1 className="text-2xl font-bold text-foreground">Сайт воспитателя</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Сайт воспитателя</h1>
             </div>
             <div className="hidden md:flex gap-4">
               <Button variant="ghost" onClick={() => scrollToSection('home')}>Главная</Button>
