@@ -598,7 +598,7 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Обо мне</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
             <div className="space-y-4">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 Моя профессия — это не просто работа, это призвание. Каждый день я с радостью встречаю своих воспитанников, помогаю им открывать мир, учиться и развиваться.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
