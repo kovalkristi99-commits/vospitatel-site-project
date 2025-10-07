@@ -856,7 +856,7 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Родителям</h2>
           <Tabs defaultValue="tips" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 bg-white/90">
-              <TabsTrigger value="tips" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Советы</TabsTrigger>
+              <TabsTrigger value="tips" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Полезные ссылки</TabsTrigger>
               <TabsTrigger value="schedule" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Занятия в группе</TabsTrigger>
               <TabsTrigger value="info" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Полезная информация</TabsTrigger>
             </TabsList>
