@@ -842,10 +842,10 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <p className="text-muted-foreground">• Заранее установите режим дня, близкий к детсадовскому</p>
-                  <p className="text-muted-foreground">• Развивайте навыки самообслуживания</p>
-                  <p className="text-muted-foreground">• Общайтесь с другими детьми на площадке</p>
-                  <p className="text-muted-foreground">• Читайте книги о детском саде</p>
+                  <p className="text-foreground">• Заранее установите режим дня, близкий к детсадовскому</p>
+                  <p className="text-foreground">• Развивайте навыки самообслуживания</p>
+                  <p className="text-foreground">• Общайтесь с другими детьми на площадке</p>
+                  <p className="text-foreground">• Читайте книги о детском саде</p>
                 </CardContent>
               </Card>
             </TabsContent>
