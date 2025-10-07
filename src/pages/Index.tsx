@@ -572,7 +572,7 @@ const Index = () => {
       <section id="home" className="py-20 px-4 relative z-10">
         <div className="container mx-auto text-center">
           <div className="inline-block mb-6 animate-fade-in">
-            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-primary/20">
+            <div className="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-primary/20">
               <img 
                 src="https://cdn.poehali.dev/files/3d40e234-6408-4b1c-97ea-39e4504d5a4c.jpg" 
                 alt="Воспитатель"
