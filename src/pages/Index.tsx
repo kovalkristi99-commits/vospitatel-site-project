@@ -879,6 +879,10 @@ const Index = () => {
                     <Icon name="ExternalLink" size={20} className="text-orange-600" />
                     <span className="text-orange-700 font-medium">Дети Mail.ru - развитие и здоровье</span>
                   </a>
+                  <a href="http://www.baby-news.net/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+                    <Icon name="ExternalLink" size={20} className="text-purple-600" />
+                    <span className="text-purple-700 font-medium">Baby-news - новости о детях</span>
+                  </a>
 
                 </CardContent>
               </Card>
