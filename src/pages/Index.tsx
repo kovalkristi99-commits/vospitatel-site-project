@@ -828,7 +828,7 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Родителям</h2>
           <Tabs defaultValue="tips" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
+            <TabsList className="grid w-full grid-cols-3 mb-8 bg-white/90">
               <TabsTrigger value="tips">Советы</TabsTrigger>
               <TabsTrigger value="schedule">Занятия в группе</TabsTrigger>
               <TabsTrigger value="info">Полезная информация</TabsTrigger>
