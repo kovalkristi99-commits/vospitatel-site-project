@@ -184,6 +184,12 @@ const Index = () => {
 
   const galleryImages = [
     { 
+      title: 'Видео занятий', 
+      description: 'Занятия с детьми в группе',
+      image: '',
+      video: 'https://www.youtube.com/embed/mApInJF51bk'
+    },
+    { 
       title: 'Наши дети', 
       description: 'Зимние праздники',
       image: 'https://cdn.poehali.dev/files/4bd3e976-263e-499f-8205-a2471899e3a6.jpg'
@@ -996,11 +1002,21 @@ const Index = () => {
                     <div className="p-1">
                       <Card className="overflow-hidden">
                         <div className="aspect-video overflow-hidden bg-muted">
-                          <img 
-                            src={image.image} 
-                            alt={image.title}
-                            className="w-full h-full object-contain"
-                          />
+                          {image.video ? (
+                            <iframe 
+                              src={image.video}
+                              title={image.title}
+                              className="w-full h-full"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          ) : (
+                            <img 
+                              src={image.image} 
+                              alt={image.title}
+                              className="w-full h-full object-contain"
+                            />
+                          )}
                         </div>
                         <CardHeader className="text-center">
                           <CardTitle className="text-xl">{image.title}</CardTitle>
