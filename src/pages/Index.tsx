@@ -607,6 +607,7 @@ const Index = () => {
               <Button variant="default" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
               <Button variant="default" onClick={() => scrollToSection('parents')}>Родителям</Button>
               <Button variant="default" onClick={() => scrollToSection('gallery')}>Галерея</Button>
+              <Button variant="default" onClick={() => scrollToSection('videos')}>Видео</Button>
               <Button variant="default" onClick={() => scrollToSection('family-values')}>Семейные ценности</Button>
               <Button variant="default" onClick={() => scrollToSection('methodical')}>Методическая копилка</Button>
               <Button variant="default" onClick={() => scrollToSection('contacts')}>Контакты</Button>
@@ -1039,7 +1040,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 relative z-10">
+      <section id="videos" className="py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Наши будни и праздники</h2>
           <p className="text-center text-muted-foreground mb-12">Видео из жизни нашей группы</p>
