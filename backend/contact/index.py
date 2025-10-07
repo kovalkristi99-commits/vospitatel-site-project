@@ -17,17 +17,68 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     Returns: HTTP response с результатом отправки
     '''
     method: str = event.get('httpMethod', 'GET')
+    query_params = event.get('queryStringParameters', {})
+    action = query_params.get('action', '') if query_params else ''
     
     if method == 'OPTIONS':
         return {
             'statusCode': 200,
             'headers': {
                 'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'POST, OPTIONS',
+                'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
                 'Access-Control-Allow-Headers': 'Content-Type',
                 'Access-Control-Max-Age': '86400'
             },
             'body': ''
+        }
+    
+    if method == 'GET' and action == 'list':
+        database_url = os.environ.get('DATABASE_URL')
+        if not database_url:
+            return {
+                'statusCode': 500,
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                'isBase64Encoded': False,
+                'body': json.dumps({'error': 'Database not configured'})
+            }
+        
+        conn = psycopg2.connect(database_url)
+        cur = conn.cursor()
+        
+        cur.execute("""
+            SELECT id, name, email, phone, message, created_at, ip_address
+            FROM t_p95327751_vospitatel_site_proj.contact_messages
+            ORDER BY created_at DESC
+            LIMIT 100
+        """)
+        
+        rows = cur.fetchall()
+        messages = []
+        for row in rows:
+            messages.append({
+                'id': row[0],
+                'name': row[1],
+                'email': row[2],
+                'phone': row[3],
+                'message': row[4],
+                'created_at': row[5].isoformat() if row[5] else None,
+                'ip_address': row[6]
+            })
+        
+        cur.close()
+        conn.close()
+        
+        return {
+            'statusCode': 200,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            'isBase64Encoded': False,
+            'body': json.dumps({'messages': messages})
         }
     
     if method != 'POST':
