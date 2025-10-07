@@ -184,12 +184,6 @@ const Index = () => {
 
   const galleryImages = [
     { 
-      title: 'Видео занятий', 
-      description: 'Занятия с детьми в группе',
-      image: '',
-      video: 'https://www.youtube.com/embed/mApInJF51bk'
-    },
-    { 
       title: 'Наши дети', 
       description: 'Зимние праздники',
       image: 'https://cdn.poehali.dev/files/4bd3e976-263e-499f-8205-a2471899e3a6.jpg'
@@ -1002,21 +996,11 @@ const Index = () => {
                     <div className="p-1">
                       <Card className="overflow-hidden">
                         <div className="aspect-video overflow-hidden bg-muted">
-                          {image.video ? (
-                            <iframe 
-                              src={image.video}
-                              title={image.title}
-                              className="w-full h-full"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                            />
-                          ) : (
-                            <img 
-                              src={image.image} 
-                              alt={image.title}
-                              className="w-full h-full object-contain"
-                            />
-                          )}
+                          <img 
+                            src={image.image} 
+                            alt={image.title}
+                            className="w-full h-full object-contain"
+                          />
                         </div>
                         <CardHeader className="text-center">
                           <CardTitle className="text-xl">{image.title}</CardTitle>
@@ -1031,6 +1015,24 @@ const Index = () => {
               <CarouselNext />
             </Carousel>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 relative z-10">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Видео занятий</h2>
+          <p className="text-center text-muted-foreground mb-12">Занятия с детьми в группе</p>
+          <Card className="overflow-hidden border-2">
+            <div className="aspect-video">
+              <iframe 
+                src="https://www.youtube.com/embed/mApInJF51bk"
+                title="Видео занятий"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </Card>
         </div>
       </section>
 
