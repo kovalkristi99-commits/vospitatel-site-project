@@ -830,8 +830,8 @@ const Index = () => {
           <Tabs defaultValue="tips" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 bg-white/90">
               <TabsTrigger value="tips" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Советы</TabsTrigger>
-              <TabsTrigger value="schedule">Занятия в группе</TabsTrigger>
-              <TabsTrigger value="info">Полезная информация</TabsTrigger>
+              <TabsTrigger value="schedule" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Занятия в группе</TabsTrigger>
+              <TabsTrigger value="info" className="data-[state=active]:bg-blue-500 data-[state=active]:text-white">Полезная информация</TabsTrigger>
             </TabsList>
             <TabsContent value="tips" className="space-y-4">
               <Card>
