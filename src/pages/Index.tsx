@@ -1131,6 +1131,115 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="family-values" className="py-20 px-4 relative z-10">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Семейные ценности</h2>
+          <p className="text-center text-muted-foreground mb-12">Основа воспитания и развития ребёнка</p>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="border-2">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Heart" size={32} className="text-white" />
+                </div>
+                <CardTitle>Любовь и забота</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Семья — это место, где ребёнок учится любить и быть любимым. Родительская любовь даёт 
+                  чувство безопасности и уверенности, формирует эмоциональную устойчивость и способность 
+                  к эмпатии.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Users" size={32} className="text-white" />
+                </div>
+                <CardTitle>Уважение и взаимопонимание</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Уважение к мнению каждого члена семьи учит ребёнка ценить других людей, развивает 
+                  навыки общения и умение слушать. Это основа здоровых отношений в будущем.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Book" size={32} className="text-white" />
+                </div>
+                <CardTitle>Традиции и культура</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Семейные традиции создают чувство принадлежности и стабильности. Совместные праздники, 
+                  чтение книг перед сном, воскресные прогулки — всё это формирует тёплые воспоминания 
+                  и крепкие семейные связи.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2">
+              <CardHeader>
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-500 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Award" size={32} className="text-white" />
+                </div>
+                <CardTitle>Ответственность и доверие</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Воспитание ответственности через посильные обязанности и доверие к ребёнку развивает 
+                  самостоятельность, уверенность в себе и готовность отвечать за свои поступки.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-2">
+            <CardHeader>
+              <CardTitle className="text-2xl text-center">Как укреплять семейные ценности</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <Icon name="Check" className="text-green-600 mt-1 flex-shrink-0" />
+                    <p><strong>Проводите время вместе:</strong> Совместные игры, прогулки, приготовление еды укрепляют связь</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="Check" className="text-green-600 mt-1 flex-shrink-0" />
+                    <p><strong>Общайтесь открыто:</strong> Делитесь чувствами, обсуждайте события дня, слушайте ребёнка</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="Check" className="text-green-600 mt-1 flex-shrink-0" />
+                    <p><strong>Создавайте традиции:</strong> Семейные ритуалы дают ощущение стабильности и безопасности</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <Icon name="Check" className="text-green-600 mt-1 flex-shrink-0" />
+                    <p><strong>Показывайте пример:</strong> Дети учатся, наблюдая за поведением родителей</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="Check" className="text-green-600 mt-1 flex-shrink-0" />
+                    <p><strong>Поддерживайте интересы:</strong> Уважайте увлечения ребёнка, развивайте его таланты</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="Check" className="text-green-600 mt-1 flex-shrink-0" />
+                    <p><strong>Учите доброте:</strong> Помощь другим и забота о близких — важные семейные ценности</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section id="methodical" className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Методическая копилка</h2>
