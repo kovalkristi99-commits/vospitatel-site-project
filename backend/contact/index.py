@@ -1,6 +1,8 @@
 import json
+import os
 from typing import Dict, Any
 from pydantic import BaseModel, Field
+import psycopg2
 
 class ContactRequest(BaseModel):
     name: str = Field(..., min_length=1, max_length=100)
@@ -43,18 +45,27 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         body_data = json.loads(event.get('body', '{}'))
         contact = ContactRequest(**body_data)
         
-        recipient_email = 'kriskova@yandex.ru'
+        headers = event.get('headers', {})
+        ip_address = headers.get('X-Forwarded-For', '').split(',')[0].strip() or headers.get('X-Real-IP', 'unknown')
+        user_agent = headers.get('User-Agent', 'unknown')
         
-        email_body = f"""
-        Новое сообщение с сайта воспитателя!
-        
-        Имя: {contact.name}
-        Email: {contact.email}
-        Телефон: {contact.phone or 'Не указан'}
-        
-        Сообщение:
-        {contact.message}
-        """
+        database_url = os.environ.get('DATABASE_URL')
+        if database_url:
+            conn = psycopg2.connect(database_url)
+            cur = conn.cursor()
+            
+            cur.execute(
+                """
+                INSERT INTO t_p95327751_vospitatel_site_proj.contact_messages 
+                (name, email, phone, message, ip_address, user_agent)
+                VALUES (%s, %s, %s, %s, %s, %s)
+                """,
+                (contact.name, contact.email, contact.phone, contact.message, ip_address, user_agent)
+            )
+            
+            conn.commit()
+            cur.close()
+            conn.close()
         
         return {
             'statusCode': 200,
