@@ -607,6 +607,7 @@ const Index = () => {
               <Button variant="default" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
               <Button variant="default" onClick={() => scrollToSection('parents')}>Родителям</Button>
               <Button variant="default" onClick={() => scrollToSection('gallery')}>Галерея</Button>
+              <Button variant="default" onClick={() => scrollToSection('family-values')}>Семейные ценности</Button>
               <Button variant="default" onClick={() => scrollToSection('methodical')}>Методическая копилка</Button>
               <Button variant="default" onClick={() => scrollToSection('contacts')}>Контакты</Button>
             </div>
