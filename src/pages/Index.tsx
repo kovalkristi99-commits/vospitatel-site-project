@@ -601,7 +601,7 @@ const Index = () => {
               <p className="text-lg text-foreground leading-relaxed">
                 Моя профессия — это не просто работа, это призвание. Каждый день я с радостью встречаю своих воспитанников, помогаю им открывать мир, учиться и развиваться.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 Педагогический стаж более 7 лет позволяет мне находить индивидуальный подход к каждому ребёнку, учитывая его особенности и потребности.
               </p>
               <div className="flex flex-wrap gap-2 pt-4">
