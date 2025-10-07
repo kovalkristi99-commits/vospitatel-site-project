@@ -583,7 +583,7 @@ const Index = () => {
           <h2 className="text-5xl font-bold mb-6 text-foreground animate-fade-in">
             Добро пожаловать на мой сайт!
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-2xl font-semibold text-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
             Я, Пушмина Кристина Геннадьевна-воспитатель с любовью к детям и призванием помогать им расти и развиваться!
           </p>
           <Button size="lg" className="animate-scale-in" onClick={() => scrollToSection('about')}>
