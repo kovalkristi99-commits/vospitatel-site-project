@@ -567,7 +567,9 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="py-20 px-4">
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+      
+      <section id="home" className="py-20 px-4 relative z-10">
         <div className="container mx-auto text-center">
           <div className="inline-block mb-6 animate-fade-in">
             <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-primary/20">
@@ -591,7 +593,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4 bg-card">
+      <section id="about" className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Обо мне</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
@@ -675,7 +677,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 px-4">
+      <section id="portfolio" className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Портфолио</h2>
           <p className="text-center text-muted-foreground mb-12">Мои награды и достижения</p>
@@ -757,7 +759,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-card">
+      <section className="py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Благодарности</h2>
           <p className="text-center text-muted-foreground mb-12">От родителей и коллег</p>
@@ -822,7 +824,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="parents" className="py-20 px-4">
+      <section id="parents" className="py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Родителям</h2>
           <Tabs defaultValue="tips" className="w-full">
@@ -941,7 +943,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-20 px-4">
+      <section id="gallery" className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Галерея</h2>
           <p className="text-center text-muted-foreground mb-12">Моменты из жизни нашей группы и детского сада</p>
@@ -975,7 +977,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="methodical" className="py-20 px-4 bg-card">
+      <section id="methodical" className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Методическая копилка</h2>
           <p className="text-center text-muted-foreground mb-12">Полезные материалы для работы с детьми</p>
@@ -1359,7 +1361,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 px-4">
+      <section id="contacts" className="py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Контакты</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -1469,7 +1471,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-card border-t border-border py-8 px-4">
+      <footer className="border-t border-border py-8 px-4 relative z-10 bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">© 2024 Сайт воспитателя. Создано с любовью к детям ❤️</p>
         </div>
