@@ -1065,6 +1065,20 @@ const Index = () => {
                 <CardTitle className="text-center">Занятие 3</CardTitle>
               </CardHeader>
             </Card>
+            <Card className="overflow-hidden border-2">
+              <div className="aspect-video">
+                <iframe 
+                  src="https://www.youtube.com/embed/WZd2qUD8hvM"
+                  title="Видео занятий 4"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">Занятие 4</CardTitle>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
