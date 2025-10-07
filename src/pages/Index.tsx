@@ -863,10 +863,7 @@ const Index = () => {
             <TabsContent value="tips" className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Icon name="Lightbulb" size={24} className="text-accent" />
-                    Как подготовить ребёнка к детскому саду
-                  </CardTitle>
+                  <CardTitle className="flex items-center gap-2">Полезные ссылки для родителей</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-foreground">• Заранее установите режим дня, близкий к детсадовскому</p>
