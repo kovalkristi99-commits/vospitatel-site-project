@@ -1,5 +1,8 @@
 import json
 import os
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from typing import Dict, Any
 from pydantic import BaseModel, Field
 import psycopg2
@@ -66,6 +69,39 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             conn.commit()
             cur.close()
             conn.close()
+        
+        smtp_host = os.environ.get('SMTP_HOST')
+        smtp_port = os.environ.get('SMTP_PORT')
+        smtp_user = os.environ.get('SMTP_USER')
+        smtp_password = os.environ.get('SMTP_PASSWORD')
+        
+        if all([smtp_host, smtp_port, smtp_user, smtp_password]):
+            msg = MIMEMultipart()
+            msg['From'] = smtp_user
+            msg['To'] = 'kriskova@yandex.ru'
+            msg['Subject'] = f'Новое сообщение с сайта от {contact.name}'
+            
+            body = f"""
+Новое сообщение с сайта воспитателя!
+
+Имя: {contact.name}
+Email: {contact.email}
+Телефон: {contact.phone or 'Не указан'}
+
+Сообщение:
+{contact.message}
+
+---
+IP: {ip_address}
+            """
+            
+            msg.attach(MIMEText(body, 'plain', 'utf-8'))
+            
+            server = smtplib.SMTP(smtp_host, int(smtp_port))
+            server.starttls()
+            server.login(smtp_user, smtp_password)
+            server.send_message(msg)
+            server.quit()
         
         return {
             'statusCode': 200,
