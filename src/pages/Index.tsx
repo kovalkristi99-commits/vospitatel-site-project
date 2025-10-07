@@ -865,11 +865,27 @@ const Index = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">Полезные ссылки для родителей</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-foreground">• Заранее установите режим дня, близкий к детсадовскому</p>
-                  <p className="text-foreground">• Развивайте навыки самообслуживания</p>
-                  <p className="text-foreground">• Общайтесь с другими детьми на площадке</p>
-                  <p className="text-foreground">• Читайте книги о детском саде</p>
+                <CardContent className="space-y-3">
+                  <a href="https://растимдетей.рф/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
+                    <Icon name="ExternalLink" size={16} />
+                    <span>Растим детей - портал для родителей</span>
+                  </a>
+                  <a href="https://www.ya-roditel.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
+                    <Icon name="ExternalLink" size={16} />
+                    <span>Я-родитель - советы по воспитанию</span>
+                  </a>
+                  <a href="https://ikp-rao.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
+                    <Icon name="ExternalLink" size={16} />
+                    <span>Институт коррекционной педагогики</span>
+                  </a>
+                  <a href="https://deti.mail.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
+                    <Icon name="ExternalLink" size={16} />
+                    <span>Дети Mail.ru - развитие и здоровье</span>
+                  </a>
+                  <a href="https://www.det-sad.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
+                    <Icon name="ExternalLink" size={16} />
+                    <span>Детский сад.Ру - методики и советы</span>
+                  </a>
                 </CardContent>
               </Card>
             </TabsContent>
