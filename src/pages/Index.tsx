@@ -866,25 +866,25 @@ const Index = () => {
                   <CardTitle className="flex items-center gap-2">Полезные ссылки для родителей</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <a href="https://растимдетей.рф/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
-                    <Icon name="ExternalLink" size={16} />
-                    <span>Растим детей - портал для родителей</span>
+                  <a href="https://растимдетей.рф/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                    <Icon name="ExternalLink" size={20} className="text-blue-600" />
+                    <span className="text-blue-700 font-medium">Растим детей - портал для родителей</span>
                   </a>
-                  <a href="https://www.ya-roditel.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
-                    <Icon name="ExternalLink" size={16} />
-                    <span>Я-родитель - советы по воспитанию</span>
+                  <a href="https://www.ya-roditel.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                    <Icon name="ExternalLink" size={20} className="text-green-600" />
+                    <span className="text-green-700 font-medium">Я-родитель - советы по воспитанию</span>
                   </a>
-                  <a href="https://ikp-rao.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
-                    <Icon name="ExternalLink" size={16} />
-                    <span>Институт коррекционной педагогики</span>
+                  <a href="https://ikp-rao.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+                    <Icon name="ExternalLink" size={20} className="text-purple-600" />
+                    <span className="text-purple-700 font-medium">Институт коррекционной педагогики</span>
                   </a>
-                  <a href="https://deti.mail.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
-                    <Icon name="ExternalLink" size={16} />
-                    <span>Дети Mail.ru - развитие и здоровье</span>
+                  <a href="https://deti.mail.ru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
+                    <Icon name="ExternalLink" size={20} className="text-orange-600" />
+                    <span className="text-orange-700 font-medium">Дети Mail.ru - развитие и здоровье</span>
                   </a>
-                  <a href="https://www.det-sad.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:underline">
-                    <Icon name="ExternalLink" size={16} />
-                    <span>Детский сад.Ру - методики и советы</span>
+                  <a href="https://www.det-sad.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors">
+                    <Icon name="ExternalLink" size={20} className="text-pink-600" />
+                    <span className="text-pink-700 font-medium">Детский сад.Ру - методики и советы</span>
                   </a>
                 </CardContent>
               </Card>
