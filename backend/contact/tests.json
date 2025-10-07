@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "name": "Test contact form submission",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тестовый пользователь",
+        "email": "test@example.com",
+        "phone": "+7 999 123-45-67",
+        "message": "Это тестовое сообщение"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "message": "string"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test OPTIONS request",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

@@ -21,13 +21,40 @@ const Index = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: 'Сообщение отправлено!',
-      description: 'Спасибо за обращение. Я свяжусь с вами в ближайшее время.',
-    });
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/e7a7cb4f-c113-49ca-9293-d219d231a66e', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (response.ok && data.success) {
+        toast({
+          title: 'Сообщение отправлено!',
+          description: 'Спасибо за обращение. Я свяжусь с вами в ближайшее время.',
+        });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        toast({
+          title: 'Ошибка отправки',
+          description: 'Попробуйте позже или свяжитесь по телефону',
+          variant: 'destructive'
+        });
+      }
+    } catch (error) {
+      toast({
+        title: 'Ошибка отправки',
+        description: 'Попробуйте позже или свяжитесь по телефону',
+        variant: 'destructive'
+      });
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
