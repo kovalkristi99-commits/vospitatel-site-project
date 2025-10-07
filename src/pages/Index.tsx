@@ -1020,8 +1020,8 @@ const Index = () => {
 
       <section className="py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Видео занятий</h2>
-          <p className="text-center text-muted-foreground mb-12">Занятия с детьми в группе</p>
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Наши будни и праздники</h2>
+          <p className="text-center text-muted-foreground mb-12">Видео из жизни нашей группы</p>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="overflow-hidden border-2">
               <div className="aspect-video">
