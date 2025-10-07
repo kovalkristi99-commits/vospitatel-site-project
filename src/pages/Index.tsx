@@ -555,7 +555,7 @@ const Index = () => {
               <h1 className="text-2xl font-bold text-gray-900">Сайт воспитателя</h1>
             </div>
             <div className="hidden md:flex gap-4">
-              <Button variant="ghost" onClick={() => scrollToSection('home')}>Главная</Button>
+              <Button variant="default" onClick={() => scrollToSection('home')}>Главная</Button>
               <Button variant="ghost" onClick={() => scrollToSection('about')}>Обо мне</Button>
               <Button variant="ghost" onClick={() => scrollToSection('portfolio')}>Портфолио</Button>
               <Button variant="ghost" onClick={() => scrollToSection('parents')}>Родителям</Button>
