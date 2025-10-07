@@ -219,6 +219,31 @@ const Index = () => {
       image: 'https://cdn.poehali.dev/files/5439c196-5c34-427c-9bce-b4a4b77961d9.jpg'
     },
     { 
+      title: 'Выпускной в детском саду', 
+      description: 'Праздничное мероприятие',
+      image: 'https://cdn.poehali.dev/files/8280d56a-50f5-4fbd-81be-d31ef72ba794.jpg'
+    },
+    { 
+      title: 'Семейные моменты', 
+      description: 'Спортивные соревнования',
+      image: 'https://cdn.poehali.dev/files/5f21bc37-ebf4-4321-b1ff-69507666425f.jpg'
+    },
+    { 
+      title: 'Театральная постановка', 
+      description: 'Выступление детей',
+      image: 'https://cdn.poehali.dev/files/b2eb110c-bbad-49ba-b3b8-a0f681335339.jpg'
+    },
+    { 
+      title: 'Праздник осени', 
+      description: 'Осенние утренники',
+      image: 'https://cdn.poehali.dev/files/79798d16-e8f7-4779-bdf9-ee7b30134b00.jpg'
+    },
+    { 
+      title: 'Осенний праздник', 
+      description: 'Игры и танцы',
+      image: 'https://cdn.poehali.dev/files/02b99771-d283-4622-8621-f5e0bb3fe865.jpg'
+    },
+    { 
       title: 'День космонавтики', 
       description: 'Викторина и награждение',
       image: 'https://cdn.poehali.dev/files/dc05286e-c465-416b-947e-6e6c9c5eb9a9.jpg'
