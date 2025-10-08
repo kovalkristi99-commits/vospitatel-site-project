@@ -664,7 +664,7 @@ const Index = () => {
         stages: [
           {
             name: 'Ход мероприятия',
-            activity: 'Воспитатель встречает детей в музыкальном зале. Посвящение зала стоит домик. Внимание, внимание! Звук скрипки ребят, подходите ближе, будем им подходить, что постучим двери другу смело.\n\nДвигательная игра на муз. Е.Железновой «Мы ногами топ-топ-топ».\n\nВоспитатель: В. Воспитатель встречает детей в музыкальном зале. Посвящение зала стоит домик. Внимание, внимание! Звук скрипки ребят, подходите ближе, будем им подходить так, что запостучимся. Смотрите на меня внимательно и делайте постучимся!\n\nИгра-приветствие «Здравствуй»: Здравствуй, правая рука, Здравствуй, левая рука, Здравствуй друг, здравствуй друг, Здравствуй, общий дружный круг.\n\nВ: Ребята, я хочу вас-то вам рассказать. Сегодня мне попалось незнакомец и сказал это ему очень грустно и он желает нас в гости. Он снизу покажет и желает нас. Не и знаю кто это. Посмотрите на приложи фотографии. Кто это? (Ответы детей) Правильно это Петрушка. А где же он сам?\n\nМузыкально-ритмическое движение «Поезд» — Дети друг за другом двигаются топочущим шагом по залу по музыкальным инструментом. С окончании мелодии останавливаются.\n\nПетрушка: Здравствуйте, детишки – девчонки и мальчишки! Хорошо вы подходите!\n\nВ: Привет нам очень-очень приятно! А где же он сам?\n\nПетрушка: Прикладна! Выходите из визиток! А где же он сам? Вот в других, Посете нас в виде! А не очень не обижался. Я вот вас втиху кресликами покажем моди. Хочу с наша в средств помогать. Вам нужны ложки, а сам буду царьировать. Смотрите на меня внимательно и делайте постучимся!\n\nИгра на деревянных ложках «Калинка» — Дети берут по делушке и каждую ложка взглядить игру по ряду. Петрушка стучит раньше это у одного, кто у угсуяна такт, как бы кстучиваю ложки сничает меловдость. Дети посторонят за ним.\n\nПетрушка: Молодцы! Замечательно игрались на ложках. Собирайте ложки в домек.\n\nВ мы хотите со мной потанцевать?\n\nДети: Да!\n\nПетрушка: Тогда стаьвайтесь дружу за другом, и берётесь за плечики. Это будет наш поезд. (Посещаеют на посезди дается. С ним можем играть.)\n\nДидактическая игра с покраавлом «Музыкальный домик» — Петрушка: Если идёт музыкала и родить вперё, то оно прекращается в музыкальный домек (Петрушка и воспитатель беручся за угольки и поднимают его вверх, а дети прорбегаются в посмарший центр. Поезд открывается, детки собираются. (Дети забегают под покрывало). Какая в домике музыка будет играть. Звучит русская народная мелодия «Пачель». Дети пляшут под покрывало. Петрушка: Ну-ка русская покинить, покажем всё повеците! Звучит «Колядование с голучением», Звучит бабудующая (Псздобевание с самальбунам. Дети встивился на музыкала. Петрушка: Кольчабашка у нас, засыпайте тот же час.\n\nЗвучит «Марш Д Шостсковича» — Дети наряжают шагами на месте.\n\nВоспитатель: Вот он идёт шагом и мы регбектывся наш отряд. Петрушка: Домик закрываются, дети разбегаются!\n\nЗвучит бэговая музыка. Петрушка и воспитательь опускавнись до пола, а дети вы разбегаются, чтобы не попалось топ погребного.\n\nПетрушка: А смею с волшебным покрывалом можно повертать и играть. Ребята, вы любите играть в прятки?\n\nДети: Да!\n\nПетрушка: Очень любят поиграться в поели.\n\nИгра «прятки с покрывалостью» — Петрушка. Кстук вообразилем открывается. Я стал с нова и дочним, выглянет нулевую играя в прятки. Ребяты, а что бы составь, покифре же угмовение?\n\nДети: Спасибо!\n\nПетрушка у себя в гостях весело, а дома лучше. Пора нам первилиться в зимой возвратиться.\n\nДети: До свидания, ребята! Присказывайте еще в гости! Дети уходя в группу.\n\nПетрушка машет рукой детки и помар уходит за ширму.',
+            activity: 'Воспитатель встречает детей в музыкальном зале. Посвящение зала стоит домик. Внимание, внимание! Звук скрипки ребят, подходите ближе, будем им подходить, что постучим двери другу смело.\n\nДвигательная игра на муз. Е.Железновой «Мы ногами топ-топ-топ».\n\nВоспитатель: В. Воспитатель встречает детей в музыкальном зале. Посвящение зала стоит домик. Внимание, внимание! Звук скрипки ребят, подходите ближе, будем им подходить так, что запостучимся. Смотрите на меня внимательно и делайте постучимся!\n\nИгра-приветствие «Здравствуй»: Здравствуй, правая рука, Здравствуй, левая рука, Здравствуй друг, здравствуй друг, Здравствуй, общий дружный круг.\n\nВ: Ребята, я хочу вас-то вам рассказать. Сегодня мне попалось незнакомец и сказал это ему очень грустно и он желает нас в гости. Он снизу покажет и желает нас. Не и знаю кто это. Посмотрите на приложи фотографии. Кто это? (Ответы детей) Правильно это Петрушка. А где же он сам?\n\nМузыкально-ритмическое движение «Поезд» — Дети друг за другом двигаются топочущим шагом по залу по музыкальным инструментом. С окончании мелодии останавливаются.\n\nПетрушка: Здравствуйте, детишки – девчонки и мальчишки! Хорошо вы подходите!\n\nВ: Привет нам очень-очень приятно! А где же он сам?\n\nПетрушка: Прикладна! Выходите из визиток! А где же он сам? Вот в других, Посете нас в виде! А не очень не обижался. Я вот вас втиху кресликами покажем моди. Хочу с наша в средств помогать. Вам нужны ложки, а сам буду царьировать. Смотрите на меня внимательно и делайте постучимся!\n\nИгра на деревянных ложках «Калинка» — Дети берут по делушке и каждую ложка взглядить игру по ряду. Петрушка стучит раньше это у одного, кто у угсуяна такт, как бы кстучиваю ложки сничает меловдость. Дети посторонят за ним.\n\nПетрушка: Молодцы! Замечательно игрались на ложках. Собирайте ложки в домек.\n\nВ мы хотите со мной потанцевать?\n\nДети: Да!\n\nПетрушка: Тогда стаьвайтесь дружу за другом, и берётесь за плечики. Это будет наш поезд. (Посещаеют на пос... [truncated]
             result: 'Создано радостное настроение, укреплены дружеские взаимоотношения',
             type: 'Музыкальная, Игровая, Двигательная'
           }
@@ -778,6 +778,17 @@ const Index = () => {
 
   const [showLessons, setShowLessons] = useState(false);
   const [selectedLesson, setSelectedLesson] = useState<number | null>(null);
+  const [ageFilter, setAgeFilter] = useState<string>('all');
+  const [areaFilter, setAreaFilter] = useState<string>('all');
+
+  const ageGroups = ['all', 'Вторая младшая группа (3-4 года)', 'Средняя группа (4-5 лет)', 'Подготовительная группа (6-7 лет)'];
+  const educationalAreas = ['all', 'Художественно-эстетическое развитие', 'Познавательное развитие', 'Познавательное развитие (ФЭМП)', 'Социально-коммуникативное развитие'];
+
+  const filteredLessons = lessons.filter(lesson => {
+    const ageMatch = ageFilter === 'all' || lesson.age === ageFilter;
+    const areaMatch = areaFilter === 'all' || lesson.area === areaFilter;
+    return ageMatch && areaMatch;
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted to-background" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/58ea9d95-decc-4238-a296-7968715452c7.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
@@ -1459,12 +1470,50 @@ const Index = () => {
                         <h3 className="text-2xl font-bold mb-2">Конспекты занятий</h3>
                         <p className="text-muted-foreground">Готовые методические разработки для различных возрастных групп</p>
                       </div>
+                      
+                      <div className="grid md:grid-cols-2 gap-4 p-4 bg-muted rounded-lg">
+                        <div className="space-y-2">
+                          <Label>Возрастная группа</Label>
+                          <select 
+                            className="w-full p-2 rounded-md border border-input bg-background"
+                            value={ageFilter}
+                            onChange={(e) => setAgeFilter(e.target.value)}
+                          >
+                            <option value="all">Все группы</option>
+                            <option value="Вторая младшая группа (3-4 года)">Вторая младшая (3-4 года)</option>
+                            <option value="Средняя группа (4-5 лет)">Средняя (4-5 лет)</option>
+                            <option value="Подготовительная группа (6-7 лет)">Подготовительная (6-7 лет)</option>
+                          </select>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <Label>Образовательная область</Label>
+                          <select 
+                            className="w-full p-2 rounded-md border border-input bg-background"
+                            value={areaFilter}
+                            onChange={(e) => setAreaFilter(e.target.value)}
+                          >
+                            <option value="all">Все области</option>
+                            <option value="Художественно-эстетическое развитие">Художественно-эстетическое</option>
+                            <option value="Познавательное развитие">Познавательное развитие</option>
+                            <option value="Познавательное развитие (ФЭМП)">Познавательное (ФЭМП)</option>
+                            <option value="Социально-коммуникативное развитие">Социально-коммуникативное</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div className="text-sm text-muted-foreground">
+                        Найдено конспектов: {filteredLessons.length}
+                      </div>
+
                       <div className="grid md:grid-cols-2 gap-4">
-                        {lessonPlans.map((lesson, index) => (
+                        {filteredLessons.map((lesson) => {
+                          const originalIndex = lessons.findIndex(l => l.title === lesson.title);
+                          return (
                           <Card 
-                            key={index} 
+                            key={originalIndex} 
                             className="border-2 cursor-pointer hover:border-primary transition-all"
-                            onClick={() => setSelectedLesson(index)}
+                            onClick={() => setSelectedLesson(originalIndex)}
                           >
                             <CardHeader>
                               <div className="flex items-start gap-3">
@@ -1490,7 +1539,8 @@ const Index = () => {
                               )}
                             </CardContent>
                           </Card>
-                        ))}
+                        );
+                        })}
                       </div>
                     </div>
                   </DialogContent>
@@ -1498,15 +1548,15 @@ const Index = () => {
 
                 <Dialog open={selectedLesson !== null} onOpenChange={() => setSelectedLesson(null)}>
                   <DialogContent className="max-w-5xl max-h-[85vh] overflow-y-auto">
-                    {selectedLesson !== null && lessonPlans[selectedLesson]?.fullContent && (
+                    {selectedLesson !== null && lessons[selectedLesson]?.fullContent && (
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-3xl font-bold mb-2">{lessonPlans[selectedLesson].title}</h2>
+                          <h2 className="text-3xl font-bold mb-2">{lessons[selectedLesson].title}</h2>
                           <div className="flex flex-wrap gap-2 mb-4">
-                            <Badge variant="secondary">{lessonPlans[selectedLesson].age}</Badge>
-                            <Badge variant="outline">{lessonPlans[selectedLesson].area}</Badge>
+                            <Badge variant="secondary">{lessons[selectedLesson].age}</Badge>
+                            <Badge variant="outline">{lessons[selectedLesson].area}</Badge>
                           </div>
-                          <p className="text-muted-foreground">{lessonPlans[selectedLesson].fullContent.type}</p>
+                          <p className="text-muted-foreground">{lessons[selectedLesson].fullContent.type}</p>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4">
@@ -1515,7 +1565,7 @@ const Index = () => {
                               <CardTitle className="text-lg">Культурная практика</CardTitle>
                             </CardHeader>
                             <CardContent>
-                              <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.practice}</p>
+                              <p className="text-sm text-muted-foreground">{lessons[selectedLesson].fullContent.practice}</p>
                             </CardContent>
                           </Card>
 
@@ -1524,7 +1574,7 @@ const Index = () => {
                               <CardTitle className="text-lg">Культурно-смысловой контекст</CardTitle>
                             </CardHeader>
                             <CardContent>
-                              <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.context}</p>
+                              <p className="text-sm text-muted-foreground">{lessons[selectedLesson].fullContent.context}</p>
                             </CardContent>
                           </Card>
                         </div>
@@ -1534,7 +1584,7 @@ const Index = () => {
                             <CardTitle>Цель занятия</CardTitle>
                           </CardHeader>
                           <CardContent>
-                            <p className="text-muted-foreground">{lessonPlans[selectedLesson].fullContent.goal}</p>
+                            <p className="text-muted-foreground">{lessons[selectedLesson].fullContent.goal}</p>
                           </CardContent>
                         </Card>
 
@@ -1546,7 +1596,7 @@ const Index = () => {
                             <div>
                               <h4 className="font-semibold mb-2 text-primary">Обучающие:</h4>
                               <ul className="list-disc list-inside space-y-1">
-                                {lessonPlans[selectedLesson].fullContent.tasks.learning.map((task, i) => (
+                                {lessons[selectedLesson].fullContent.tasks.learning.map((task, i) => (
                                   <li key={i} className="text-sm text-muted-foreground">{task}</li>
                                 ))}
                               </ul>
@@ -1554,7 +1604,7 @@ const Index = () => {
                             <div>
                               <h4 className="font-semibold mb-2 text-secondary">Развивающие:</h4>
                               <ul className="list-disc list-inside space-y-1">
-                                {lessonPlans[selectedLesson].fullContent.tasks.developing.map((task, i) => (
+                                {lessons[selectedLesson].fullContent.tasks.developing.map((task, i) => (
                                   <li key={i} className="text-sm text-muted-foreground">{task}</li>
                                 ))}
                               </ul>
@@ -1562,7 +1612,7 @@ const Index = () => {
                             <div>
                               <h4 className="font-semibold mb-2 text-accent">Воспитательные:</h4>
                               <ul className="list-disc list-inside space-y-1">
-                                {lessonPlans[selectedLesson].fullContent.tasks.educational.map((task, i) => (
+                                {lessons[selectedLesson].fullContent.tasks.educational.map((task, i) => (
                                   <li key={i} className="text-sm text-muted-foreground">{task}</li>
                                 ))}
                               </ul>
@@ -1575,7 +1625,7 @@ const Index = () => {
                             <CardTitle>Оборудование</CardTitle>
                           </CardHeader>
                           <CardContent>
-                            <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.equipment}</p>
+                            <p className="text-sm text-muted-foreground">{lessons[selectedLesson].fullContent.equipment}</p>
                           </CardContent>
                         </Card>
 
@@ -1584,7 +1634,7 @@ const Index = () => {
                             <CardTitle>Ход занятия</CardTitle>
                           </CardHeader>
                           <CardContent className="space-y-4">
-                            {lessonPlans[selectedLesson].fullContent.stages.map((stage, i) => (
+                            {lessons[selectedLesson].fullContent.stages.map((stage, i) => (
                               <div key={i} className="border-l-4 border-l-primary pl-4">
                                 <h4 className="font-semibold mb-2">{i + 1}. {stage.name} этап</h4>
                                 {stage.type && (
