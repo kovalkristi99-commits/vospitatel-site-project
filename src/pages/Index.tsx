@@ -2207,40 +2207,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pedagogues" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 gradient-text">Для педагогов</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Методические материалы и профессиональные разработки
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="hover-scale border-2 hover:border-primary transition-all duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="GraduationCap" size={32} className="text-white" />
-                </div>
-                <CardTitle>Методические разработки</CardTitle>
-                <CardDescription>Материалы для работы педагогов</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">Планы, конспекты и методические пособия</p>
-                <div className="space-y-2">
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <Icon name="FileText" className="mr-2 h-4 w-4" />
-                      Материал 1
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       <section id="contacts" className="py-20 px-4 relative z-10">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Контакты</h2>
