@@ -784,7 +784,7 @@ const Index = () => {
   const ageGroups = ['all', 'Вторая младшая группа (3-4 года)', 'Средняя группа (4-5 лет)', 'Подготовительная группа (6-7 лет)'];
   const educationalAreas = ['all', 'Художественно-эстетическое развитие', 'Познавательное развитие', 'Познавательное развитие (ФЭМП)', 'Социально-коммуникативное развитие'];
 
-  const filteredLessons = lessons.filter(lesson => {
+  const filteredLessons = lessonPlans.filter(lesson => {
     const ageMatch = ageFilter === 'all' || lesson.age === ageFilter;
     const areaMatch = areaFilter === 'all' || lesson.area === areaFilter;
     return ageMatch && areaMatch;
