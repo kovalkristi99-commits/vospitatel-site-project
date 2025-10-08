@@ -2120,9 +2120,9 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">Памятки, буклеты и консультации для родителей</p>
                 <div className="space-y-2">
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/d/rElG1pCTsKOZnA" target="_blank" rel="noopener noreferrer">
-                      <Icon name="FileText" className="mr-2 h-4 w-4" />
-                      Комплексно-тематическое планирование работы Клубного часа
+                    <a href="https://disk.yandex.ru/d/rElG1pCTsKOZnA" target="_blank" rel="noopener noreferrer" className="flex items-start">
+                      <Icon name="FileText" className="mr-2 h-4 w-4 mt-1 flex-shrink-0" />
+                      <span className="leading-tight">Комплексно-тематическое<br />планирование работы Клубного часа</span>
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
