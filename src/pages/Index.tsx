@@ -2122,7 +2122,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/cWKqdiIsDMH_KQ" target="_blank" rel="noopener noreferrer">
                       <Icon name="Book" className="mr-2 h-4 w-4" />
-                      Подготовка к школе
+                      Возрастные особенности детей 4-5 лет
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
