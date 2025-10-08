@@ -2116,7 +2116,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/p-vt7Nj9jiSiRw" target="_blank" rel="noopener noreferrer">
                       <Icon name="Sparkles" className="mr-2 h-4 w-4" />
-                      Развивающие игры дома
+                      Буклет "Рекомендации для родителей будующих первоклассников"
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
