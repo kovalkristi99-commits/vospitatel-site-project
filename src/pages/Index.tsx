@@ -1479,6 +1479,18 @@ const Index = () => {
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/example4" target="_blank" rel="noopener noreferrer">
+                      <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
+                      Картотека 4
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/example5" target="_blank" rel="noopener noreferrer">
+                      <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
+                      Картотека 5
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/l-KLK5Sh8zU2Rg" target="_blank" rel="noopener noreferrer">
                       <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
                       Картотека 4
