@@ -2138,9 +2138,9 @@ const Index = () => {
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/i/p-vt7Nj9jiSiRw" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Sparkles" className="mr-2 h-4 w-4" />
-                      Рекомендации для родителей будущих первоклассников
+                    <a href="https://disk.yandex.ru/i/p-vt7Nj9jiSiRw" target="_blank" rel="noopener noreferrer" className="flex items-start">
+                      <Icon name="Sparkles" className="mr-2 h-4 w-4 mt-1 flex-shrink-0" />
+                      <span className="leading-tight">Рекомендации для родителей<br />будущих первоклассников</span>
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
