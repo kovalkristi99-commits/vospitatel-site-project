@@ -2132,7 +2132,7 @@ const Index = () => {
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://disk.yandex.ru/i/brjPhnko6vOCGg" target="_blank" rel="noopener noreferrer">
                       <Icon name="Sun" className="mr-2 h-4 w-4" />
                       Режим дня ребёнка
                     </a>
