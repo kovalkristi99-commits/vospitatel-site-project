@@ -1508,7 +1508,7 @@ const Index = () => {
 
                       <div className="grid md:grid-cols-2 gap-4">
                         {filteredLessons.map((lesson) => {
-                          const originalIndex = lessons.findIndex(l => l.title === lesson.title);
+                          const originalIndex = lessonPlans.findIndex(l => l.title === lesson.title);
                           return (
                           <Card 
                             key={originalIndex} 
