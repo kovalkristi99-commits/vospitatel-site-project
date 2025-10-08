@@ -2097,32 +2097,50 @@ const Index = () => {
                 <div className="space-y-2">
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/d/rElG1pCTsKOZnA" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Heart" className="mr-2 h-4 w-4" />
-                      Материалы 1
+                      <Icon name="FileText" className="mr-2 h-4 w-4" />
+                      Адаптация ребёнка в детском саду
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/d/4L1j3_hFlrkmng" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Heart" className="mr-2 h-4 w-4" />
-                      Материалы 2
+                      <Icon name="Brain" className="mr-2 h-4 w-4" />
+                      Развитие речи дошкольника
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/ZXT0PryLx72AOg" target="_blank" rel="noopener noreferrer">
                       <Icon name="Heart" className="mr-2 h-4 w-4" />
-                      Материалы 3
+                      Воспитание без наказаний
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/p-vt7Nj9jiSiRw" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Heart" className="mr-2 h-4 w-4" />
-                      Материалы 4
+                      <Icon name="Sparkles" className="mr-2 h-4 w-4" />
+                      Развивающие игры дома
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/cWKqdiIsDMH_KQ" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Heart" className="mr-2 h-4 w-4" />
-                      Материалы 5
+                      <Icon name="Book" className="mr-2 h-4 w-4" />
+                      Подготовка к школе
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Users" className="mr-2 h-4 w-4" />
+                      Семейные традиции
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Sun" className="mr-2 h-4 w-4" />
+                      Режим дня ребёнка
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Apple" className="mr-2 h-4 w-4" />
+                      Правильное питание
                     </a>
                   </Button>
                 </div>
