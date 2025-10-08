@@ -2138,7 +2138,7 @@ const Index = () => {
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://disk.yandex.ru/i/SWe4mdvzUJzGzg" target="_blank" rel="noopener noreferrer">
                       <Icon name="Apple" className="mr-2 h-4 w-4" />
                       Правильное питание
                     </a>
