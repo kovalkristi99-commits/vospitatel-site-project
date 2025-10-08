@@ -1548,15 +1548,15 @@ const Index = () => {
 
                 <Dialog open={selectedLesson !== null} onOpenChange={() => setSelectedLesson(null)}>
                   <DialogContent className="max-w-5xl max-h-[85vh] overflow-y-auto">
-                    {selectedLesson !== null && lessons[selectedLesson]?.fullContent && (
+                    {selectedLesson !== null && lessonPlans[selectedLesson]?.fullContent && (
                       <div className="space-y-6">
                         <div>
-                          <h2 className="text-3xl font-bold mb-2">{lessons[selectedLesson].title}</h2>
+                          <h2 className="text-3xl font-bold mb-2">{lessonPlans[selectedLesson].title}</h2>
                           <div className="flex flex-wrap gap-2 mb-4">
-                            <Badge variant="secondary">{lessons[selectedLesson].age}</Badge>
-                            <Badge variant="outline">{lessons[selectedLesson].area}</Badge>
+                            <Badge variant="secondary">{lessonPlans[selectedLesson].age}</Badge>
+                            <Badge variant="outline">{lessonPlans[selectedLesson].area}</Badge>
                           </div>
-                          <p className="text-muted-foreground">{lessons[selectedLesson].fullContent.type}</p>
+                          <p className="text-muted-foreground">{lessonPlans[selectedLesson].fullContent.type}</p>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4">
@@ -1565,7 +1565,7 @@ const Index = () => {
                               <CardTitle className="text-lg">Культурная практика</CardTitle>
                             </CardHeader>
                             <CardContent>
-                              <p className="text-sm text-muted-foreground">{lessons[selectedLesson].fullContent.practice}</p>
+                              <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.practice}</p>
                             </CardContent>
                           </Card>
 
@@ -1574,7 +1574,7 @@ const Index = () => {
                               <CardTitle className="text-lg">Культурно-смысловой контекст</CardTitle>
                             </CardHeader>
                             <CardContent>
-                              <p className="text-sm text-muted-foreground">{lessons[selectedLesson].fullContent.context}</p>
+                              <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.context}</p>
                             </CardContent>
                           </Card>
                         </div>
@@ -1584,7 +1584,7 @@ const Index = () => {
                             <CardTitle>Цель занятия</CardTitle>
                           </CardHeader>
                           <CardContent>
-                            <p className="text-muted-foreground">{lessons[selectedLesson].fullContent.goal}</p>
+                            <p className="text-muted-foreground">{lessonPlans[selectedLesson].fullContent.goal}</p>
                           </CardContent>
                         </Card>
 
@@ -1596,7 +1596,7 @@ const Index = () => {
                             <div>
                               <h4 className="font-semibold mb-2 text-primary">Обучающие:</h4>
                               <ul className="list-disc list-inside space-y-1">
-                                {lessons[selectedLesson].fullContent.tasks.learning.map((task, i) => (
+                                {lessonPlans[selectedLesson].fullContent.tasks.learning.map((task, i) => (
                                   <li key={i} className="text-sm text-muted-foreground">{task}</li>
                                 ))}
                               </ul>
@@ -1604,7 +1604,7 @@ const Index = () => {
                             <div>
                               <h4 className="font-semibold mb-2 text-secondary">Развивающие:</h4>
                               <ul className="list-disc list-inside space-y-1">
-                                {lessons[selectedLesson].fullContent.tasks.developing.map((task, i) => (
+                                {lessonPlans[selectedLesson].fullContent.tasks.developing.map((task, i) => (
                                   <li key={i} className="text-sm text-muted-foreground">{task}</li>
                                 ))}
                               </ul>
@@ -1612,7 +1612,7 @@ const Index = () => {
                             <div>
                               <h4 className="font-semibold mb-2 text-accent">Воспитательные:</h4>
                               <ul className="list-disc list-inside space-y-1">
-                                {lessons[selectedLesson].fullContent.tasks.educational.map((task, i) => (
+                                {lessonPlans[selectedLesson].fullContent.tasks.educational.map((task, i) => (
                                   <li key={i} className="text-sm text-muted-foreground">{task}</li>
                                 ))}
                               </ul>
@@ -1625,7 +1625,7 @@ const Index = () => {
                             <CardTitle>Оборудование</CardTitle>
                           </CardHeader>
                           <CardContent>
-                            <p className="text-sm text-muted-foreground">{lessons[selectedLesson].fullContent.equipment}</p>
+                            <p className="text-sm text-muted-foreground">{lessonPlans[selectedLesson].fullContent.equipment}</p>
                           </CardContent>
                         </Card>
 
@@ -1634,7 +1634,7 @@ const Index = () => {
                             <CardTitle>Ход занятия</CardTitle>
                           </CardHeader>
                           <CardContent className="space-y-4">
-                            {lessons[selectedLesson].fullContent.stages.map((stage, i) => (
+                            {lessonPlans[selectedLesson].fullContent.stages.map((stage, i) => (
                               <div key={i} className="border-l-4 border-l-primary pl-4">
                                 <h4 className="font-semibold mb-2">{i + 1}. {stage.name} этап</h4>
                                 {stage.type && (
