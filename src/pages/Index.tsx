@@ -1996,6 +1996,12 @@ const Index = () => {
                       Игра 2
                     </a>
                   </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/tAFBoWb62CFfzw" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Sparkles" className="mr-2 h-4 w-4" />
+                      Игра 3
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
