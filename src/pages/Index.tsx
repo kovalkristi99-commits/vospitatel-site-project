@@ -1987,7 +1987,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/LOZMHEzjCo31HA" target="_blank" rel="noopener noreferrer">
                       <Icon name="Sparkles" className="mr-2 h-4 w-4" />
-                      Игра 1
+                      Игра математический твистер
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
