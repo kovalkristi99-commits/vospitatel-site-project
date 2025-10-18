@@ -2098,10 +2098,10 @@ const Index = () => {
                       Интерактивная игра "Собери все лепестки"
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/i/9tFBB46_rII7Zg" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                      Проект "Как рассказать нашим младшим друзьям о родном городе?"
+                  <Button variant="outline" className="w-full h-auto whitespace-normal" asChild>
+                    <a href="https://disk.yandex.ru/i/9tFBB46_rII7Zg" target="_blank" rel="noopener noreferrer" className="py-3">
+                      <Icon name="Monitor" className="mr-2 h-4 w-4 flex-shrink-0" />
+                      <span>Проект "Как рассказать нашим младшим друзьям о родном городе?"</span>
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
