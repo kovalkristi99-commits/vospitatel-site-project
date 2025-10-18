@@ -2215,7 +2215,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/_qQnLcSqOdus-g" target="_blank" rel="noopener noreferrer">
                       <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
-                      Проект 1
+                      Проект "Новогоднее настроение" в средней группе
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
