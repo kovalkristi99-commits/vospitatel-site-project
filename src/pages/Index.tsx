@@ -2038,7 +2038,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/FysPW7HJ77ohRA" target="_blank" rel="noopener noreferrer">
                       <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
-                      Картотека 3
+                      Картотека подвижных игр в средней группе
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
