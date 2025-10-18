@@ -2002,6 +2002,12 @@ const Index = () => {
                       Игры со стаканчиками
                     </a>
                   </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Sparkles" className="mr-2 h-4 w-4" />
+                      Игры со стаканчиками. Практическое применение
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
