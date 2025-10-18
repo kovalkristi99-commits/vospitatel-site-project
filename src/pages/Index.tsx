@@ -2233,7 +2233,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/sYoeLv6_MK-6lg" target="_blank" rel="noopener noreferrer">
                       <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
-                      Проект 4
+                      Проект "Секреты волшебного фантика"
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
