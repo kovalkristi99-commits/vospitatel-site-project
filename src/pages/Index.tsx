@@ -2119,7 +2119,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/d/n-h43vzBIDvd1g" target="_blank" rel="noopener noreferrer">
                       <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                      Презентация 6
+                      Презентация "Технология "Клубный час"
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
