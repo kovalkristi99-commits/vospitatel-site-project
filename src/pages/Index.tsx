@@ -1993,7 +1993,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/BIDWCcQ3faXT1A" target="_blank" rel="noopener noreferrer">
                       <Icon name="Sparkles" className="mr-2 h-4 w-4" />
-                      Игра 2
+                      Игра крестики-нолики и классики наоборот
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
