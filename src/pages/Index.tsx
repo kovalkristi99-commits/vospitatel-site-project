@@ -2242,10 +2242,10 @@ const Index = () => {
                       Проект "Зимняя сказка на окне"
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/d/a6UFrHHlSOxB9g" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Lightbulb" className="mr-2 h-4 w-4" />
-                      Проект 6
+                  <Button variant="outline" className="w-full h-auto whitespace-normal" asChild>
+                    <a href="https://disk.yandex.ru/d/a6UFrHHlSOxB9g" target="_blank" rel="noopener noreferrer" className="py-3">
+                      <Icon name="Lightbulb" className="mr-2 h-4 w-4 flex-shrink-0" />
+                      <span>Проект "Как рассказать нашим младшим друзьям о родном городе?"</span>
                     </a>
                   </Button>
                 </div>
