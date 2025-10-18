@@ -2089,7 +2089,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/30pWMdlaUG2f-w" target="_blank" rel="noopener noreferrer">
                       <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                      Презентация 1
+                      Интерактивная викторина "Животные тайги"
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
