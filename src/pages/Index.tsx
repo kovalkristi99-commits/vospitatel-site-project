@@ -2128,12 +2128,6 @@ const Index = () => {
                       Презентация "Что такое клубный час в ДОУ?"
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="https://disk.yandex.ru/d/W0FzIkWS4oJTjw" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                      Презентация 8
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>
