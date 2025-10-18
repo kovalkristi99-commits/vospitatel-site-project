@@ -2032,7 +2032,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/pPw3QV2hW0a3lA" target="_blank" rel="noopener noreferrer">
                       <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
-                      Картотека 2
+                      Картотека опытов и экспериментов в средней группе
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
