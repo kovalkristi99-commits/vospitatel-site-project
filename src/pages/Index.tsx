@@ -2003,7 +2003,7 @@ const Index = () => {
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://disk.yandex.ru/d/_7AmS1Lcve3mlA" target="_blank" rel="noopener noreferrer">
                       <Icon name="Sparkles" className="mr-2 h-4 w-4" />
                       Игры со стаканчиками. Практическое применение
                     </a>
