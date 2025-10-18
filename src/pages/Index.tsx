@@ -2095,7 +2095,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/i/LukvIsXJ2oGPHQ" target="_blank" rel="noopener noreferrer">
                       <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                      Презентация 2
+                      Интерактивная игра "Собери все лепестки"
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
