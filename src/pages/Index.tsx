@@ -2125,7 +2125,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full" asChild>
                     <a href="https://disk.yandex.ru/d/CIDT2ED7J1NEMA" target="_blank" rel="noopener noreferrer">
                       <Icon name="Monitor" className="mr-2 h-4 w-4" />
-                      Презентация 7
+                      Презентация "Что такое клубный час в ДОУ?"
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
