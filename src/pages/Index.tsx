@@ -2053,6 +2053,12 @@ const Index = () => {
                       Картотека 5
                     </a>
                   </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://disk.yandex.ru/i/rROQyCrPASThHA" target="_blank" rel="noopener noreferrer">
+                      <Icon name="FolderOpen" className="mr-2 h-4 w-4" />
+                      Картотека 6
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
