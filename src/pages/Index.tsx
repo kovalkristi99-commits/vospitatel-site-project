@@ -1144,7 +1144,7 @@ const Index = () => {
             Добро пожаловать на мой сайт!
           </h2>
           <p className="text-2xl font-semibold text-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-            Я, Пушмина Кристина Геннадьевна-воспитатель с любовью к детям и призванием помогать им расти и развиваться!
+            Я, Пушмина Кристина Геннадьевна-воспитатель с любовью к детям и стремлением обеспечить их рост и развитие!
           </p>
           <Button size="lg" className="animate-scale-in" onClick={() => scrollToSection('about')}>
             Узнать больше
@@ -1196,7 +1196,7 @@ const Index = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-foreground">Средне-профессиональное образование</h4>
+                  <h4 className="font-semibold text-foreground">Среднее профессиональное образование</h4>
                   <p className="text-muted-foreground">Специальность: Воспитатель детей дошкольного возраста</p>
                   <p className="text-sm text-muted-foreground">Год окончания: 2022</p>
                 </div>
