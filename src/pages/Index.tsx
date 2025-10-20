@@ -1144,7 +1144,7 @@ const Index = () => {
             Добро пожаловать на мой сайт!
           </h2>
           <p className="text-2xl font-semibold text-foreground mb-8 max-w-2xl mx-auto animate-fade-in">
-            Я, Пушмина Кристина Геннадьевна-воспитатель с любовью к детям и стремлением обеспечить их рост и развитие!
+            Я, Пушмина Кристина Геннадьевна-педагог с любовью к детям и стремлением обеспечить их рост и развитие!
           </p>
           <Button size="lg" className="animate-scale-in" onClick={() => scrollToSection('about')}>
             Узнать больше
